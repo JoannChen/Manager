@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/transparent"
+    android:gravity="center">
+
+    <!--加载进度条-->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px88"
+        android:background="@drawable/shape_loading"
+        android:paddingEnd="@dimen/px18"
+        android:alpha="0.8"
+        android:paddingStart="@dimen/px18">
+
+
+        <ImageView
+            android:id="@id/iv_icon"
+            android:layout_width="@dimen/px40"
+            android:layout_height="@dimen/px40"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_sys_error"
+            android:alpha="0.8"
+            android:contentDescription="@string/app_icon" />
+
+        <TextView
+            android:id="@id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/px18"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/iv_icon"
+            android:text="@string/loading_in"
+            android:textColor="@color/white_font"
+            android:textSize="@dimen/px24" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

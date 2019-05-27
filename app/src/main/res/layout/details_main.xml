@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <!--在场车辆详情-->
+
+    <LinearLayout style="@style/Layout_Match_Vertical_Style">
+
+
+        <!--第一部分（车场名称／停车费用／车牌号／停车时长）-->
+
+        <include layout="@layout/details_part1" />
+
+        <!--第二部分（车辆类型／入场时间／支付状态／出场时间）-->
+
+        <include layout="@layout/details_part2" />
+
+
+        <!--子订单查看明细-->
+
+        <TextView
+            android:id="@id/tv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px30"
+            android:paddingBottom="@dimen/px30"
+            android:text="@string/child_order_detailed"
+            android:textColor="@color/gray_font"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/px24"
+            android:visibility="gone" />
+
+
+        <!--第四部分（超时时长／需要补缴）-->
+
+        <include
+            android:id="@+id/ic_Overtime"
+            layout="@layout/details_part4"
+            android:visibility="gone" />
+
+        <!--支付成功-->
+
+        <TextView
+            android:id="@+id/tv_paySuccess"
+            style="@style/Home_Body_String_Style"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/px100"
+            android:drawableStart="@mipmap/icon_details_success"
+            android:text="@string/pay_success"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

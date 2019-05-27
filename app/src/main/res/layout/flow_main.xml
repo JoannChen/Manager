@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/white">
+
+    <!--流量分析／财务分析-->
+
+    <RadioGroup
+        android:id="@id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@id/rb_left"
+            style="@style/RadioButton_Font_Style"
+            android:text="@string/in_out_car" />
+
+        <!--财务分析隐藏-->
+
+        <RadioButton
+            android:id="@id/rb_center"
+            style="@style/RadioButton_Font_Style"
+            android:text="@string/park_utilization"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@id/rb_right"
+            style="@style/RadioButton_Font_Style"
+            android:text="@string/park_turnover" />
+    </RadioGroup>
+
+    <!--分割线-->
+
+    <View style="@style/View_Line_Style" />
+
+    <!--Fragment容器-->
+
+    <LinearLayout
+        android:id="@id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style">
+
+
+    <!--优先获取焦点-->
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+
+    <!--带搜索框的标题栏-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_marginEnd="@dimen/px16"
+        android:layout_marginStart="@dimen/px16"
+        android:gravity="center">
+
+        <!--搜索框-->
+
+        <com.zuoyu.manager.widget.search.SearchEditText
+            android:id="@id/searchEditText"
+            style="@style/Search_EditText_Style"
+            android:layout_margin="@dimen/px14"
+            android:layout_weight="2"
+            android:focusableInTouchMode="true" />
+
+
+        <!--取消／搜索-->
+
+        <TextView
+            android:id="@id/tv_cancel"
+            android:layout_width="@dimen/px150"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/search"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

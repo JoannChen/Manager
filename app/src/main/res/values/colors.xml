@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#9bc66f</color>
+
+    <color name="blue">#44B2FE</color>
+    <color name="blue_btn">#DBF1F9</color>
+    <color name="blue_font">#4BB5EE</color>
+    <color name="blue_line">#25AEEE</color>
+
+
+    <color name="transparent">#00000000</color>
+
+    <color name="gray_bg">#F2F2F2</color>
+    <color name="gray_font">#888888</color>
+    <color name="gray_font_ba">#BABABA</color>
+    <color name="line_gray">#E8E8E8</color>
+    <color name="line_divider">#dadada</color>
+    <color name="gray_line_title">#B0B0B0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_font">#D2D2D2</color>
+    <color name="black">#000000</color>
+    <color name="black_font">#333333</color>
+    <color name="black_loading">#222222</color>
+
+    <color name="red">#FF0000</color>
+    <color name="red_bg">#EA5F55</color>
+    <color name="red_btn">#F8CAC3</color>
+    <color name="red_font">#EC4F39</color>
+    <color name="font_pink">#ef9f91</color>
+
+    <color name="orange_font">#F3A826</color>
+
+
+    <color name="btn_checked">#EC4F39</color>
+    <color name="btn_unchecked">#E5E5E5</color>
+
+
+</resources>

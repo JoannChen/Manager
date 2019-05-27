@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:background="@color/transparent">
+
+    <!--商家优惠券子条目-->
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="@dimen/px690"
+        android:layout_height="@dimen/px200"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@mipmap/bg_my_coupons">
+
+        <RelativeLayout
+            android:id="@id/line_1"
+            android:layout_width="@dimen/px360"
+            android:layout_height="match_parent">
+
+
+            <!--优惠券名称-->
+
+            <TextView
+                android:id="@id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/px36"
+                android:layout_marginTop="@dimen/px36"
+                android:ellipsize="end"
+                android:maxEms="16"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:text="@string/app_text"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/px34" />
+
+            <!--今日优惠总数-->
+
+            <TextView
+                android:id="@id/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nickname"
+                android:layout_marginStart="@dimen/px40"
+                android:layout_marginTop="@dimen/px20"
+                android:text="@string/coupons_total_count"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/px26" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/text_1"
+                android:layout_marginEnd="@dimen/px40"
+                android:layout_toEndOf="@id/text_1"
+                android:gravity="end"
+                android:text="@string/count_"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/px26" />
+
+
+            <!--剩余优惠券-->
+
+            <TextView
+                android:id="@id/text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/text_1"
+                android:layout_below="@id/text_1"
+                android:layout_marginTop="@dimen/px16"
+                android:text="@string/coupons_send_count"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/px24" />
+
+
+            <TextView
+                android:id="@+id/tv_surplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/text_2"
+                android:layout_marginEnd="@dimen/px40"
+                android:layout_toEndOf="@id/text_2"
+                android:gravity="end"
+                android:text="@string/count_"
+                android:textColor="@color/black_font"
+                android:textSize="@dimen/px26" />
+
+        </RelativeLayout>
+
+
+        <!--优惠券(面额)-->
+
+        <TextView
+            android:id="@id/tv_coupons"
+            android:layout_width="@dimen/px286"
+            android:layout_height="@dimen/px150"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/app_text"
+            android:textColor="@color/red_font"
+            android:textSize="@dimen/px70" />
+
+
+        <!--有效期至-->
+
+        <TextView
+            android:id="@+id/tv_valid"
+            android:layout_width="@dimen/px286"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_coupons"
+            android:layout_marginStart="@dimen/px50"
+            android:gravity="center_horizontal|top"
+            android:text="@string/valid_colon"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px22" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

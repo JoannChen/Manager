@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <!--系统消息／即时消息-->
+
+    <include layout="@layout/layout_title_nav" />
+
+
+    <!--展示列表-->
+
+    <!--后期调用layout_pull布局-->
+
+    <RelativeLayout
+        android:id="@id/emptyRLayout"
+        style="@style/Layout_Match_Vertical_Style">
+
+        <ImageView
+            android:id="@id/emptyIcon"
+            android:layout_width="@dimen/px146"
+            android:layout_height="@dimen/px170"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px400"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/icon_msg_null" />
+
+        <TextView
+            android:id="@id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyIcon"
+            android:text="@string/no_message_record"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px30"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px28" />
+    </RelativeLayout>
+
+</LinearLayout>

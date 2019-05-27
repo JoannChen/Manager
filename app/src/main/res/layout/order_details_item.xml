@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!--在场车辆详情／订单详情（3）-->
+
+    <!--子订单明细子条目-->
+
+    <!--订单编号（子订单号）—-->
+
+    <TextView
+        android:id="@+id/orderNum"
+        style="@style/Details_Font_Style"
+        android:layout_marginStart="@dimen/px128"
+        android:text="@string/order_number_colon" />
+
+    <TextView
+        android:id="@id/tv_orderNum"
+        style="@style/Details_Font_Style"
+        android:layout_marginStart="@dimen/px72"
+        android:layout_toEndOf="@id/orderNum" />
+
+    <!--票号-->
+
+    <TextView
+        android:id="@+id/tickedId"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/orderNum"
+        android:text="@string/ticket_id_colon" />
+
+    <TextView
+        android:id="@+id/tv_tickedId"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/orderNum" />
+
+
+    <!--入场时间-->
+
+    <TextView
+        android:id="@+id/inTime"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/tickedId"
+        android:text="@string/in_time_colon" />
+
+    <TextView
+        android:id="@+id/tv_inTime"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/tickedId" />
+
+    <!--出场时间-->
+
+    <TextView
+        android:id="@+id/outTime"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/inTime"
+        android:text="@string/out_time_colon" />
+
+    <TextView
+        android:id="@+id/tv_outTime"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/inTime" />
+
+    <!--优惠金额-->
+
+    <TextView
+        android:id="@+id/discount"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/outTime"
+        android:text="@string/discount_money_colon" />
+
+    <TextView
+        android:id="@+id/tv_discount"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/outTime" />
+
+    <!--实收金额-->
+
+    <TextView
+        android:id="@+id/actualPay"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/discount"
+        android:text="@string/actual_money_colon" />
+
+    <TextView
+        android:id="@+id/tv_actualPay"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/discount" />
+
+
+    <!--分割色块-->
+    <View
+        android:id="@+id/divisionView"
+        style="@style/View_Division_Style"
+        android:layout_below="@id/actualPay"
+        android:layout_marginTop="@dimen/px30"/>
+
+
+</RelativeLayout>

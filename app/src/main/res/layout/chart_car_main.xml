@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+
+    <TextView
+        android:id="@id/tv_desc"
+        style="@style/Chart_Production_Font_Style"
+        android:layout_marginTop="@dimen/px52"
+        android:text="@string/chart_prompt_car_24" />
+
+    <ImageView
+        android:id="@id/iv_back"
+        style="@style/Chart_Close_Btn_Style"
+        android:contentDescription="@string/app_icon" />
+
+    <TextView
+        android:id="@id/text_4"
+        style="@style/Chart_Production_Font_Right_Big_Style"
+        android:layout_alignBaseline="@id/tv_desc"
+        android:layout_marginStart="@dimen/px30"
+        android:layout_toStartOf="@id/iv_back"
+        android:drawablePadding="@dimen/px5"
+        android:drawableStart="@mipmap/icon_car_in"
+        android:text="@string/in_car" />
+
+    <TextView
+        android:id="@id/text_5"
+        style="@style/Chart_Production_Font_Right_Big_Style"
+        android:layout_alignBaseline="@id/tv_desc"
+        android:layout_toStartOf="@id/text_4"
+        android:drawablePadding="@dimen/px5"
+        android:drawableStart="@mipmap/icon_car_out"
+        android:text="@string/out_car" />
+
+
+    <com.zuoyu.manager.widget.hellochart.chart.LineChartView
+        android:id="@id/twoLineChartView"
+        style="@style/Chart_Style"
+        android:layout_below="@id/tv_desc" />
+
+</RelativeLayout>

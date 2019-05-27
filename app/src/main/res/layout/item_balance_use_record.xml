@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:layout_height="@dimen/px142"
+    android:paddingBottom="@dimen/px30"
+    android:paddingEnd="@dimen/px40"
+    android:paddingStart="@dimen/px40"
+    android:paddingTop="@dimen/px30">
+
+    <!--余额使用记录子条目-->
+
+    <!--车牌号-->
+
+    <TextView
+        android:id="@id/tv_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px30" />
+
+    <!--发放金额-->
+
+    <TextView
+        android:id="@id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tv_plate"
+        android:gravity="end"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px30" />
+
+    <!--票号-->
+
+    <TextView
+        android:id="@id/tv_ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/app_text"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px24" />
+
+    <!--发放时间 2017-07-18 10:13:14-->
+
+    <TextView
+        android:id="@id/tv_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tv_ticket"
+        android:gravity="end"
+        android:text="@string/app_text"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px24" />
+
+</RelativeLayout>

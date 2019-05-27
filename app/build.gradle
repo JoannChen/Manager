@@ -1,0 +1,128 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+/* ============================= 定义方法 =========================== */
+
+def static appName() {
+    return "51Manager"
+}
+
+static int appVersionCode() {
+    return 6
+}
+
+static String appVersionName() {
+    return "1.3.2"
+}
+
+def static buildTime() {
+    return new Date().format("yyyyMMdd")
+}
+
+/* ================================================================== */
+
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.zuoyu.manager"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode appVersionCode()
+        versionName appVersionName()
+        flavorDimensions appVersionName()
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /* 配置多渠道号 */
+    productFlavors {
+
+        qh360 {}
+        androids {}
+        baidu {}
+        phone91 {}
+        wandoujia {}
+        yingyongbao {}
+        anzhi {}
+        xiaomi {}
+        huawei {}
+        oppo {}
+        h5 {}
+        park51 {}
+
+
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    /* 修改打包后的apk名称 */
+    applicationVariants.all {
+        variant ->
+            variant.outputs.all { output ->
+                if (outputFileName.endsWith('.apk')) {
+                    outputFileName = "${appName()}_V${variant.versionName}_${variant.flavorName}_${buildTime()}.apk"
+                }
+            }
+    }
+
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+
+    // 百分比布局适配
+    compile 'com.zhy:autolayout:1.4.5'
+
+    // SnackBar工具类
+    compile 'com.android.support:design:26.1.0'
+
+    // 沉浸式状态栏工具类（源码已拷贝到项目里）
+    compile 'com.jaeger.statusbaruitl:library:1.3.2'
+
+    // 集成友盟统计分析
+    compile 'com.umeng.analytics:analytics:6.1.2'
+
+    // 网络请求
+    compile 'com.zhy:okhttputils:2.6.2'
+
+    // 解析数据
+    compile 'com.alibaba:fastjson:1.2.17'
+
+    // 图片加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    // 图片支持缩放移动（仿微信朋友圈）
+    compile 'com.uwetrottmann.photoview:library:1.2.4'
+
+    // 局部刷新事件
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //权限管理库
+    compile 'com.yanzhenjie:permission:1.1.2'
+
+    // 算法加密
+    compile files('libs/bcprov-jdk15-143.jar')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+}
+repositories {
+    mavenCentral()
+    google()
+}

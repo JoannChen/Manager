@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/px30"
+    android:gravity="center">
+
+    <!--底线-->
+
+    <View
+        android:layout_width="@dimen/px246"
+        android:layout_height="@dimen/px2"
+        android:background="@color/line_gray" />
+
+    <TextView
+        android:id="@+id/tv_baseline"
+        android:layout_width="@dimen/px162"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_font_ba"
+        android:textSize="@dimen/px22" />
+
+    <View
+        android:layout_width="@dimen/px246"
+        android:layout_height="@dimen/px2"
+        android:background="@color/line_gray" />
+
+</LinearLayout>

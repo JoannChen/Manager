@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_Style"
+    android:background="@color/transparent">
+
+    <!--优惠券使用记录子条目-->
+
+    <RelativeLayout
+        android:layout_width="@dimen/px694"
+        android:layout_height="@dimen/px218"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/bg_coupons"
+        android:paddingLeft="@dimen/px36"
+        android:paddingRight="@dimen/px36">
+
+        <!--优惠券名称-->
+
+        <TextView
+            android:id="@id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20"
+            android:ellipsize="end"
+            android:maxEms="16"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:text="@string/app_text"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px34" />
+
+        <!--车牌号-->
+
+        <TextView
+            android:id="@id/tv_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nickname"
+            android:layout_marginTop="@dimen/px12"
+            android:text="@string/app_text"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px30" />
+
+
+        <!--小票号-->
+
+        <TextView
+            android:id="@id/tv_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_plate"
+            android:layout_marginTop="@dimen/px10"
+            android:text="@string/ticket_colon"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px26" />
+
+        <!--优惠券(面额)-->
+
+        <TextView
+            android:id="@id/tv_coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px164"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/tv_plate"
+            android:gravity="center_vertical|end"
+            android:text="@string/app_text"
+            android:textColor="@color/red_font"
+            android:textSize="@dimen/px60" />
+
+        <!--发放时间-->
+
+        <TextView
+            android:id="@+id/tv_sendTime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px54"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:text="@string/hand_out_colon"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px20" />
+
+        <!--发放：1970-01-01 00:00:00-->
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:orientation="horizontal">
+
+    <!--结账信息-每笔收费详情-子条目-->
+
+    <!--现金 最多七位-->
+
+    <TextView
+        android:id="@id/tv_cash"
+        style="@style/Checkout_Font_Black_Style"
+        android:layout_width="@dimen/px212"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/px40"
+        android:gravity="end"
+        android:text="现金:¥555555.02" />
+
+
+    <!--电子收费金额  最多七位-->
+
+    <TextView
+        android:id="@id/tv_electronics"
+        style="@style/Checkout_Font_Black_Style"
+        android:layout_width="@dimen/px172"
+        android:layout_toStartOf="@id/tv_cash"
+        android:gravity="start"
+        android:text="电子:¥555555" />
+
+
+    <!--收费员 最多五位 -->
+
+    <TextView
+        android:id="@id/tv_operator"
+        style="@style/Checkout_Font_Black_Style"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="@dimen/px40"
+        android:text="自助缴费机" />
+
+    <!--出口  最多五位 -->
+
+    <TextView
+        android:id="@id/tv_out"
+        style="@style/Checkout_Font_Black_Style"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@id/tv_operator"
+        android:text="(东南门出口)" />
+
+
+</RelativeLayout>

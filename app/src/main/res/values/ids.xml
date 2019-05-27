@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--容器-->
+    <item name="ll_chart" type="id" />
+    <item name="ll_container" type="id" />
+
+    <item name="tv_business" type="id" />
+    <item name="tv_coupons" type="id" />
+    <item name="tv_recharge" type="id" />
+
+
+
+    <item name="tv_money" type="id" />
+    <item name="tv_hour24" type="id" />
+    <item name="tv_day7" type="id" />
+    <item name="tv_day30" type="id" />
+
+
+
+    <!--共用标题栏-->
+    <item name="iv_back" type="id" />
+
+    <item name="ic_title" type="id" />
+    <item name="tv_title" type="id" />
+
+    <item name="tv_left" type="id" />
+    <item name="iv_left" type="id" />
+
+    <item name="tv_right" type="id" />
+    <item name="iv_right" type="id" />
+
+    <item name="iv_more" type="id" />
+    <item name="tv_more" type="id" />
+    <item name="tv_hour" type="id" />
+
+    <!--功能区-->
+
+    <item name="iv_icon" type="id" />
+    <item name="tv_text" type="id" />
+
+    <!--常用组件-->
+    <item name="listView" type="id" />
+    <item name="gridView" type="id" />
+    <item name="radioGroup" type="id" />
+    <item name="progressBar" type="id" />
+    <item name="scrollView" type="id" />
+    <item name="viewSwitcher" type="id" />
+    <item name="pullListView" type="id" />
+
+    <!--文本id-->
+    <item name="text_1" type="id" />
+    <item name="text_2" type="id" />
+    <item name="text_3" type="id" />
+    <item name="text_4" type="id" />
+    <item name="text_5" type="id" />
+    <item name="text_6" type="id" />
+
+    <!--线条id-->
+    <item name="line_1" type="id" />
+    <item name="line_2" type="id" />
+    <item name="line_3" type="id" />
+    <item name="line_4" type="id" />
+    <item name="line_5" type="id" />
+    <item name="line_6" type="id" />
+
+    <!--图标id-->
+    <item name="icon_1" type="id" />
+    <item name="icon_2" type="id" />
+    <item name="icon_3" type="id" />
+    <item name="icon_4" type="id" />
+    <item name="icon_5" type="id" />
+
+    <!-- ========================================= -->
+
+    <item name="tv_desc" type="id" />
+    <item name="tv_day_rate" type="id" />
+    <item name="tv_total" type="id" />
+
+    <!--容器-->
+    <item name="ll_container_inner" type="id" />
+
+    <item name="tv_rmb" type="id" />
+    <item name="rl_details" type="id" />
+
+    <!--按钮区-->
+    <item name="btn_sure" type="id" />
+
+
+    <item name="rb_left" type="id" />
+    <item name="rb_right" type="id" />
+    <item name="rb_center" type="id" />
+
+    <item name="tv_cancel" type="id" />
+    <item name="tv_choice" type="id" />
+
+
+    <item name="statusbarutil_fake_status_bar_view" type="id" />
+    <item name="statusbarutil_translucent_view" type="id" />
+
+
+    <item name="tv_should" type="id" />
+    <item name="tv_actual" type="id" />
+    <item name="tv_discount" type="id" />
+
+
+    <item name="tv_in" type="id" />
+    <item name="tv_out" type="id" />
+    <item name="tv_inTime" type="id" />
+    <item name="tv_outTime" type="id" />
+    <item name="tv_operator" type="id" />
+    <item name="tv_electronics" type="id" />
+    <item name="tv_etc" type="id" />
+    <item name="tv_cash" type="id" />
+    <item name="tv_wechat" type="id" />
+    <item name="tv_alipay" type="id" />
+
+
+    <item name="tv_orderNum" type="id" />
+
+
+    <!--图表-->
+    <item name="chart" type="id" />
+    <item name="tv_image" type="id" />
+
+
+    <!--返回按钮-->
+    <item name="ibtn_back" type="id" />
+
+
+    <!--停车场基本信息-->
+    <item name="tv_notice" type="id" />
+    <item name="iv_desc" type="id" />
+    <item name="tv_name" type="id" />
+    <item name="tv_balance" type="id" />
+    <item name="tv_address" type="id" />
+    <item name="tv_nickname" type="id" />
+    <item name="tv_count" type="id" />
+    <item name="tv_telephone" type="id" />
+    <item name="tv_num" type="id" />
+    <item name="tv_type" type="id" />
+
+    <item name="tv_day" type="id" />
+    <item name="tv_night" type="id" />
+    <item name="tv_plate" type="id" />
+    <item name="tv_person" type="id" />
+    <item name="tv_price" type="id" />
+    <item name="tv_date" type="id" />
+    <item name="tv_time" type="id" />
+    <item name="tv_long" type="id" />
+    <item name="tv_ticket" type="id" />
+    <item name="tv_escape" type="id" />
+    <item name="tv_status" type="id" />
+    <item name="iv_status" type="id" />
+    <item name="iv_type" type="id" />
+
+    <!--搜索编辑框-->
+    <item name="et_input" type="id" />
+    <item name="et_search" type="id" />
+    <item name="et_username" type="id" />
+    <item name="et_password" type="id" />
+
+
+    <!--自定义组件-->
+    <item name="searchEditText" type="id" />
+    <item name="searchEditView" type="id" />
+    <item name="lineChartView" type="id" />
+    <item name="twoLineChartView" type="id" />
+    <item name="columnChartView" type="id" />
+    <item name="pieChartView" type="id" />
+    <item name="refreshLayout" type="id" />
+    <item name="emptyRLayout" type="id" />
+    <item name="emptyIcon" type="id" />
+    <item name="emptyText" type="id" />
+
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px60">
+
+    <!--图表列表区子条目格式：两个参数-->
+
+    <!--车位周转率子条目-->
+
+    <TextView
+        android:id="@id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/px100"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px26" />
+
+
+    <TextView
+        android:id="@id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/px100"
+        android:layout_toEndOf="@id/text_1"
+        android:gravity="end"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px26" />
+
+</RelativeLayout>

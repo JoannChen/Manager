@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!--在场车辆详情（4）-->
+
+
+    <!--超时时长-->
+
+    <TextView
+        android:id="@+id/overtime"
+        style="@style/Details_Font_Style"
+        android:layout_marginStart="@dimen/px128"
+        android:text="@string/overtime_colon" />
+
+    <TextView
+        android:id="@+id/tv_overtime"
+        style="@style/Details_Font_Style"
+        android:layout_marginStart="@dimen/px72"
+        android:layout_toEndOf="@id/overtime" />
+
+
+    <!--需要补缴-->
+
+    <TextView
+        android:id="@+id/catchUp"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/overtime"
+        android:layout_below="@id/overtime"
+        android:text="@string/catch_up_colon" />
+
+    <TextView
+        android:id="@+id/tv_catchUp"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_overtime"
+        android:layout_below="@id/overtime"
+        android:textColor="@color/red_font" />
+
+
+    <View
+        style="@style/View_Division_Style"
+        android:layout_below="@id/catchUp"
+        android:layout_height="@dimen/px100"
+        android:layout_marginTop="@dimen/px30" />
+
+
+</RelativeLayout>

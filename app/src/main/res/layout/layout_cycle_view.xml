@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zuoyu.manager.widget.BigImageViewPager
+        android:id="@+id/adv_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/circles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/adv_pager"
+        android:layout_marginBottom="@dimen/px28"
+        android:gravity="center"
+        android:orientation="horizontal" />
+</RelativeLayout>

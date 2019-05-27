@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:paddingBottom="@dimen/px30"
+    android:paddingTop="@dimen/px15">
+
+    <!--异常抬杆-子条目-->
+
+    <!--操作时间 1 ============================= Left ============================= -->
+
+    <TextView
+        android:id="@id/text_1"
+        style="@style/Exception_Font_Style"
+        android:layout_marginStart="@dimen/px40"
+        android:text="@string/operating_time_colon" />
+
+    <TextView
+        android:id="@id/tv_time"
+        style="@style/Exception_Font_Style"
+        android:layout_toEndOf="@id/text_1"
+        android:textColor="@color/gray_font" />
+
+    <!--操作地点 2-->
+
+    <TextView
+        android:id="@id/text_2"
+        style="@style/Exception_Font_Style"
+        android:layout_alignStart="@id/text_1"
+        android:layout_below="@id/text_1"
+        android:text="@string/operating_location_colon" />
+
+    <TextView
+        android:id="@id/tv_address"
+        style="@style/Exception_Font_Style"
+        android:layout_below="@id/text_1"
+        android:layout_toEndOf="@id/text_2"
+        android:textColor="@color/gray_font" />
+
+
+    <!--参考车牌号 3-->
+
+    <TextView
+        android:id="@id/text_3"
+        style="@style/Exception_Font_Style"
+        android:layout_alignStart="@id/text_1"
+        android:layout_below="@id/text_2"
+        android:text="@string/reference_plate_colon" />
+
+
+    <TextView
+        android:id="@id/tv_plate"
+        style="@style/Exception_Font_Style"
+        android:layout_below="@id/text_2"
+        android:layout_toEndOf="@id/text_3"
+        android:textColor="@color/gray_font" />
+
+
+    <!--操作人员 4 ============================= Right ============================= -->
+
+    <TextView
+        android:id="@id/text_4"
+        style="@style/Exception_Font_Style"
+        android:layout_marginStart="@dimen/px43"
+        android:layout_toEndOf="@id/tv_time"
+        android:text="@string/operator_colon" />
+
+    <TextView
+        android:id="@id/tv_operator"
+        style="@style/Exception_Font_Style"
+        android:layout_marginEnd="@dimen/px43"
+        android:layout_toEndOf="@id/text_4"
+        android:textColor="@color/gray_font" />
+
+    <!--操作性质 5 -->
+
+    <TextView
+        android:id="@id/text_5"
+        style="@style/Exception_Font_Style"
+        android:layout_alignStart="@id/text_4"
+        android:layout_below="@id/text_1"
+        android:text="@string/operating_nature_colon" />
+
+    <TextView
+        android:id="@id/tv_type"
+        style="@style/Exception_Font_Style"
+        android:layout_below="@id/text_4"
+        android:layout_toEndOf="@id/text_5"
+        android:textColor="@color/gray_font" />
+
+    <!--查看图片 -->
+
+    <TextView
+        android:id="@id/tv_image"
+        style="@style/ImageView_See_Image_Style"
+        android:layout_alignStart="@id/text_4"
+        android:layout_below="@id/text_5" />
+
+</RelativeLayout>

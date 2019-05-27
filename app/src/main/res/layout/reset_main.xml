@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:gravity="center_horizontal">
+
+    <!-- 重置密码 -->
+
+
+    <!-- 新密码 -->
+
+    <LinearLayout
+        android:layout_width="@dimen/px700"
+        android:layout_height="@dimen/px100"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/draw_border_all">
+
+        <com.zuoyu.manager.widget.ClearEditText
+            android:id="@id/et_password"
+            style="@style/EditText_Reset_Password_Style"
+            android:hint="@string/please_input_new_password" />
+
+        <CheckBox
+            android:id="@+id/iv_newEye"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/px20"
+            android:background="@drawable/draw_edit_eye"
+            android:visibility="gone"
+            android:button="@null" />
+
+    </LinearLayout>
+
+    <!--提示语-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20"
+        android:text="@string/please_input_number_case"
+        android:textSize="@dimen/px30" />
+
+    <!-- 确定按钮 -->
+
+    <Button
+        android:id="@id/btn_sure"
+        style="@style/Common_Button_Style"
+        android:layout_marginTop="@dimen/px258"
+        android:text="@string/ensure" />
+
+
+</LinearLayout>

@@ -1,0 +1,317 @@
+<resources>
+
+    <string name="app_name">无忧停车管家</string>
+    <string name="app_icon">Image</string>
+
+    <string name="app_text"> </string>
+
+    <string name="ticket_colon">小票：</string>
+    <string name="hand_out_colon">发放：&#160;</string>
+    <string name="recharge_record">充值记录</string>
+    <string name="balance_use_record">余额使用记录</string>
+    <string name="coupons_use_record">优惠券使用记录</string>
+    <string name="sorry_no_coupons_record">抱歉！暂无优惠券使用记录！</string>
+    <string name="sorry_no_balance_record">抱歉！暂无余额使用记录！</string>
+    <string name="sorry_no_recharge_record">抱歉！暂无充值记录！</string>
+    <string name="sorry_no_business">抱歉！暂无商家列表！</string>
+    <string name="sorry_no_coupons">抱歉！暂无优惠券！</string>
+
+
+    <string name="coupons_total_count">优惠券总数：</string>
+    <string name="coupons_send_count">已发优惠券：</string>
+    <string name="valid_colon">有效期至：&#160;</string>
+    <string name="hour_brackets">(小时)</string>
+
+    <string name="date_">2017/05/21</string>
+    <string name="time_">2017/05/21 13:14:00</string>
+    <string name="long_">520天13时14分</string>
+    <string name="price_">￥0.00</string>
+    <string name="count_">0</string>
+    <string name="into">入场</string>
+    <string name="out">出场</string>
+
+    <string name="recharge_money">充值金额（小时）</string>
+
+    <string name="rmb">￥</string>
+    <!--<string name="rmb">￥&#160;</string>-->
+    <string name="percent_sign">%</string>
+
+    <string name="day_report">日报表</string>
+    <string name="month_report">月报表</string>
+    <string name="park_colon">停车：</string>
+
+    <string name="in_out_car">出入场车辆</string>
+    <string name="park_utilization">车位利用率</string>
+    <string name="park_turnover">车位周转率</string>
+    <string name="park_income">临停收入</string>
+    <string name="payment">支付方式</string>
+
+    <!--ListView为空时提示-->
+
+    <string name="no_add_park">暂未添加停车场</string>
+    <string name="no_parking_car">暂无在场车辆</string>
+    <string name="no_order_record">暂无订单记录</string>
+    <string name="no_month_record">暂无月卡记录</string>
+    <string name="no_unpaid_record">暂无未支付记录</string>
+    <string name="no_abnormal_record">暂无异常记录</string>
+    <string name="no_message_record">暂无消息通知</string>
+
+    <!--搜索结果为空时提示-->
+
+    <string name="no_find_park">抱歉，未找到该停车场！</string>
+    <string name="no_find_car">抱歉，未发现该车辆！</string>
+    <string name="no_find_month">抱歉，未找到该月卡！</string>
+
+
+    <!--图标区提示-->
+
+    <string name="chart_prompt_car_24">近24小时出入场车辆统计</string>
+    <string name="chart_prompt_car_7">近7日出入场车辆统计</string>
+    <string name="chart_prompt_car_30">近30日出入场车辆统计</string>
+
+    <string name="chart_prompt_use_24">近24小时车位利用率统计</string>
+    <string name="chart_prompt_use_7">近7日车位利用率统计</string>
+    <string name="chart_prompt_use_30">近30日车位利用率统计</string>
+
+    <string name="chart_prompt_turnover_7">近7日车位周转率统计</string>
+    <string name="chart_prompt_turnover_30">近30日车位周转率统计</string>
+
+    <string name="chart_prompt_income_7">近7日车场收入统计</string>
+    <string name="chart_prompt_income_30">近30日车场收入统计</string>
+
+    <string name="chart_prompt_payment_7">近7日车场支付方式统计</string>
+    <string name="chart_prompt_payment_30">近30日车场支付方式统计</string>
+
+
+    <string name="in_car">入场车辆</string>
+    <string name="out_car">出场车辆</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+    <string name="hour24">24小时</string>
+    <string name="day7">7日</string>
+    <string name="day30">30日</string>
+    <string name="day_income">当日收入</string>
+    <string name="day_turnover">当日周转率</string>
+
+    <string name="day24_utilization_colon">24小时平均利用率：</string>
+    <string name="day_utilization_colon">日平均利用率：</string>
+
+    <string name="day_turnover_colon">日平均周转率：</string>
+    <string name="day_income_colon">日平均收入：</string>
+    <string name="day7_income_colon">7日总收入：</string>
+    <string name="day30_income_colon">30日总收入：</string>
+
+
+    <!-- ======================== pullRefresh ======================== -->
+
+    <string name="pull_up_to_loading">上拉加载</string>
+    <string name="pull_down_to_refresh">下拉刷新</string>
+
+    <string name="loading_succeed">加载成功</string>
+    <string name="loading_failed">加载失败</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_failed">刷新失败</string>
+
+    <string name="release_to_load">释放加载</string>
+    <string name="release_to_refresh">松开刷新</string>
+
+    <string name="loading">加载中…</string>
+    <string name="refreshing">刷新中…</string>
+
+    <!-- ======================== pullRefresh ======================== -->
+
+
+    <!--提示语-->
+    <string name="loading_in">正在加载中…</string>
+    <string name="network_anomaly">网络异常，请稍后再试！</string>
+
+
+    <string name="report_view">报表查看</string>
+    <string name="view_report">查看月报表</string>
+    <string name="Sunday">日</string>
+    <string name="Monday">一</string>
+    <string name="Tuesday">二</string>
+    <string name="Wednesday">三</string>
+    <string name="Thursday">四</string>
+    <string name="Friday">五</string>
+    <string name="Saturday">六</string>
+    <string name="today">今天</string>
+    <string name="month_manage">月卡管理</string>
+    <string name="checkout_statistics">结账统计</string>
+    <string name="newly">新办</string>
+    <string name="renew">续费</string>
+    <string name="valid">有效期</string>
+    <string name="card_holder">持卡人</string>
+
+
+    <string name="vip">VIP</string>
+    <string name="unpaid">未支付</string>
+    <string name="overtime">已超时</string>
+    <string name="already_paid">已支付</string>
+
+    <!--系统消息／即时消息-->
+    <string name="read_all">全部已读</string>
+    <string name="system_message">系统消息</string>
+    <string name="instant_message">即时消息</string>
+
+    <!--流量分析／财务分析-->
+    <string name="two_hundred">200字</string>
+    <string name="flow_analysis">流量分析</string>
+    <string name="financial_analysis">财务分析</string>
+
+    <!--异常抬杆／未支付记录-->
+    <string name="ticket_id_colon">小票编号：</string>
+    <string name="should_colon">应收：</string>
+    <string name="escape_colon">逃单：</string>
+    <string name="discount_colon">优惠：</string>
+    <string name="operating_time_colon">操作时间：</string>
+    <string name="operating_location_colon">操作地点：</string>
+    <string name="operator_colon">操作人员：</string>
+    <string name="operating_nature_colon">操作性质：</string>
+    <string name="reference_plate_colon">参考车牌号：</string>
+    <string name="view_picture">查看图片</string>
+    <string name="abnormal_lift">异常抬杆</string>
+    <string name="unpaid_record">未支付记录</string>
+    <string name="no_new_msg">暂无最新消息</string>
+
+    <!--商家管理-->
+    <string name="total_business">商家总数</string>
+    <string name="total_coupons">优惠券总数</string>
+    <string name="total_recharge">充值总数</string>
+    <string name="business_balance">商家余额</string>
+    <string name="surplus_coupons">剩余优惠券</string>
+    <string name="business_coupons">商家优惠券</string>
+
+    <!--日报表-->
+    <string name="total_receivable">总应收</string>
+    <string name="total_receipts">总实收</string>
+    <string name="total_discount">总优惠</string>
+
+
+    <string name="choice_park">选择停车场</string>
+    <string name="baseline">我是有底线的！</string>
+    <string name="checkout_info">今日收费员结账信息</string>
+
+
+    <!--首页-->
+    <string name="today_income">今日收入</string>
+    <string name="today_should">今日应收</string>
+    <string name="today_discount">今日优惠</string>
+    <string name="should_money">应收金额</string>
+    <string name="discount_money">优惠金额</string>
+    <string name="turnover_rate">昨日车位周转率</string>
+    <string name="utilization_rate">24小时车位利用率</string>
+
+
+    <!--支付类型-->
+    <string name="cash_brackets">（小时）</string>
+    <string name="etc">ETC</string>
+    <string name="cash">现金</string>
+    <string name="other">其他</string>
+    <string name="wechat">微信</string>
+    <string name="alipay">支付宝</string>
+    <string name="temp_car">临时车</string>
+    <string name="fixed_car">固定车</string>
+    <string name="pay_more">多次支付</string>
+
+
+    <string name="reset">重置</string>
+    <string name="submit">提交</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+
+
+    <!--在场车辆详情／订单记录-->
+    <string name="plate">车牌号</string>
+    <string name="park_fee">停车费用</string>
+    <string name="park_long">停车时长</string>
+
+    <string name="car_type_colon">车辆类型：</string>
+    <string name="in_time_colon">入场时间：</string>
+    <string name="out_time_colon">出场时间：</string>
+    <string name="park_long_colon">停车时长：</string>
+    <string name="pay_status_colon">支付状态：</string>
+    <string name="order_number_colon">订单编号：</string>
+    <string name="transaction_number_colon">交易流水号：</string>
+    <string name="child_order_colon">子订单号：</string>
+    <string name="pay_time_colon">支付时间：</string>
+    <string name="paying_park_colon">支付时停车：</string>
+    <string name="order_money_colon">订单金额：</string>
+    <string name="discount_money_colon">优惠金额：</string>
+    <string name="balance_pay_colon">余额支付：</string>
+    <string name="actual_pay_colon">实际支付：</string>
+    <string name="actual_money_colon">实收金额：</string>
+    <string name="pay_platform_colon">支付渠道：</string>
+    <string name="pay_type_colon">支付方式：</string>
+    <string name="overtime_colon">超时时长：</string>
+    <string name="catch_up_colon">需要补缴：</string>
+    <string name="pay_success">支付成功</string>
+    <string name="transaction">交易流水</string>
+    <string name="child_order_detailed">查看交易流水 >></string>
+
+    <string name="order_details">订单详情</string>
+    <string name="parking_details">车辆详情</string>
+    <string name="parking">在场车辆</string>
+    <string name="order_record">订单记录</string>
+    <string name="park_space">车位</string>
+
+    <string name="screen">筛选条件</string>
+    <string name="order_date">订单日期</string>
+    <string name="pay_type">支付类型</string>
+    <string name="car_type">车辆类型</string>
+
+
+    <!--个人中心-->
+    <string name="my_message">我的消息</string>
+    <string name="contact_51park">联系无忧</string>
+    <string name="feedback">意见反馈</string>
+    <string name="version">当前版本</string>
+    <string name="exit_login">退出登录</string>
+
+
+    <!--停车场详情-->
+    <string name="park_info">停车场详情</string>
+    <string name="park_num">车场编号：</string>
+    <string name="park_type">车场类型：</string>
+    <string name="business_hours">营业时间：</string>
+    <string name="charging_rules">收费规则：</string>
+    <string name="first_hour">首小时</string>
+    <string name="day">白天</string>
+    <string name="night">夜间</string>
+    <string name="vacation">节假日</string>
+
+
+    <string name="login">登录</string>
+    <string name="next">下一步</string>
+    <string name="user">用户名</string>
+    <string name="username">账号</string>
+    <string name="password">密码</string>
+    <string name="get_verify">获取验证码</string>
+    <string name="get_verify_again">重新获取验证码</string>
+    <string name="get_again">重新获取</string>
+
+    <string name="modify_password">修改密码</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="reset_password">重置密码</string>
+    <string name="is_forget_password">忘记密码？</string>
+    <!--<string name="is_forget_password"><u>忘记密码？</u></string>-->
+    <string name="search">搜索</string>
+    <string name="search_park">搜索停车场</string>
+    <string name="search_business_name">请输入商家名称</string>
+    <string name="input_park">输入车牌号</string>
+
+
+    <string name="please_choice_date">请选择日期</string>
+    <string name="please_input_verify">请输入验证码</string>
+    <string name="please_input_phone">请输入手机号</string>
+    <string name="please_input_username">请输入用户名/手机号</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_password_length">请输入6&#8211;10位密码</string>
+    <string name="please_input_old_password">请输入原密码</string>
+    <string name="please_input_new_password">请输入新密码</string>
+    <string name="please_input_number_case">请输入(6&#8211;10位)数字或字母，区分大小写</string>
+    <string name="please_confirm_new_password">请确认新密码(6&#8211;16位)</string>
+    <string name="welcome_join_51park_feedback">欢迎加入无忧停车，如果你对该产品有任何意见或建议，情随时联系我们。无忧停车竭诚为您服务！</string>
+
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/white">
+
+    <!--车位周转率-->
+
+
+    <!--图表容器 存放Fragment-->
+
+    <LinearLayout
+        android:id="@id/ll_chart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px400"
+        android:orientation="vertical" />
+
+    <View style="@style/View_Division_Style" />
+
+    <!--图表区两个个标题切换-->
+
+    <RadioGroup
+        android:id="@id/radioGroup"
+        style="@style/Chart_RadioGroup_Nav_Style">
+
+        <RadioButton
+            android:id="@id/tv_day7"
+            style="@style/Chart_RadioButton_Nav_Style"
+            android:text="@string/day7" />
+
+        <RadioButton
+            android:id="@id/tv_day30"
+            style="@style/Chart_RadioButton_Nav_Style"
+            android:text="@string/day30" />
+    </RadioGroup>
+
+
+    <!--列表头信息：日期／当日周转率-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px60"
+        android:layout_marginTop="@dimen/px36">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/px100"
+            android:gravity="center_vertical"
+            android:text="@string/date"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px26" />
+
+
+        <TextView
+            android:id="@+id/tv_day_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/px100"
+            android:layout_toEndOf="@id/date"
+            android:gravity="center_vertical|end"
+            android:text="@string/day_turnover"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px26" />
+
+    </RelativeLayout>
+
+    <View style="@style/View_Line_Style" />
+
+    <!--数据列表容器-->
+
+    <LinearLayout
+        android:id="@id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

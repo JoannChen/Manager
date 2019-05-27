@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:layout_height="@dimen/px218">
+
+    <!--订单记录子条目-->
+
+    <!--订单号-->
+
+    <TextView
+        android:id="@id/tv_orderNum"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px74"
+        android:layout_marginStart="@dimen/px16"
+        android:gravity="center"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px26" />
+
+    <!--出场时间-->
+
+    <TextView
+        android:id="@id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px74"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/px16"
+        android:gravity="center_vertical|end"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px26" />
+
+    <!--出场图标-->
+
+    <TextView
+        android:layout_width="@dimen/px60"
+        android:layout_height="@dimen/px30"
+        android:layout_toStartOf="@id/tv_date"
+        android:layout_marginTop="@dimen/px22"
+        android:layout_marginEnd="@dimen/px20"
+        android:background="@drawable/draw_border_all"
+        android:gravity="center"
+        android:text="@string/out"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px20" />
+
+    <!--分割线 1 -->
+
+    <View
+        android:id="@id/line_1"
+        style="@style/View_Line_Style"
+        android:layout_below="@id/tv_orderNum" />
+
+    <!--车牌号-->
+
+    <TextView
+        android:id="@id/text_1"
+        style="@style/Order_Font_Style"
+        android:layout_below="@id/line_1"
+        android:text="@string/plate" />
+
+    <TextView
+        android:id="@id/tv_plate"
+        style="@style/Order_Font_Style"
+        android:layout_below="@id/text_1"
+        android:textColor="@color/gray_font" />
+
+    <!--分割线 2 -->
+
+    <ImageView
+        android:id="@id/line_2"
+        style="@style/Order_Image_Style"
+        android:layout_below="@id/line_1"
+        android:layout_toEndOf="@id/text_1"
+        android:contentDescription="@string/app_icon" />
+
+    <!--停车时长-->
+
+    <TextView
+        android:id="@id/text_2"
+        style="@style/Order_Font_Style"
+        android:layout_below="@id/line_1"
+        android:layout_toEndOf="@id/line_2"
+        android:text="@string/park_long" />
+
+    <TextView
+        android:id="@id/tv_long"
+        style="@style/Order_Font_Style"
+        android:layout_below="@id/text_1"
+        android:layout_toEndOf="@id/line_2"
+        android:textColor="@color/gray_font" />
+
+    <!--分割线 3 -->
+
+    <ImageView
+        android:id="@id/line_3"
+        style="@style/Order_Image_Style"
+        android:layout_below="@id/line_1"
+        android:layout_toEndOf="@id/text_2"
+        android:contentDescription="@string/app_icon" />
+
+    <!--停车费用-->
+
+    <TextView
+        style="@style/Order_Font_Style"
+        android:layout_below="@id/line_1"
+        android:layout_toEndOf="@id/line_3"
+        android:text="@string/park_fee" />
+
+    <TextView
+        android:id="@id/tv_price"
+        style="@style/Order_Font_Style"
+        android:layout_below="@id/text_1"
+        android:layout_toEndOf="@id/line_3"
+        android:textColor="@color/red_font" />
+
+    <!--临停／VIP-->
+
+    <ImageView
+        android:id="@id/iv_status"
+        android:layout_width="@dimen/title_height"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/label_order_vip" />
+
+</RelativeLayout>

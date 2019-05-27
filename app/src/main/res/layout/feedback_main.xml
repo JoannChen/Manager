@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <!--意见反馈-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px516"
+        android:layout_marginBottom="@dimen/px25"
+        android:layout_marginEnd="@dimen/px25"
+        android:layout_marginStart="@dimen/px28"
+        android:layout_marginTop="@dimen/px34"
+        android:background="@drawable/draw_border_all">
+
+        <!--输入框-->
+
+        <EditText
+            android:id="@id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="top|start"
+            android:hint="@string/welcome_join_51park_feedback"
+            android:maxLength="200"
+            android:padding="@dimen/px30"
+            android:textColor="@color/black_font"
+            android:textColorHint="@color/gray_font"
+            android:textSize="@dimen/px28" />
+
+        <!--字数-->
+
+        <TextView
+            android:id="@id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/px25"
+            android:text="@string/two_hundred"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px28" />
+    </RelativeLayout>
+
+    <!--提交按钮-->
+
+    <Button
+        android:id="@id/btn_sure"
+        style="@style/Common_Button_Style"
+        android:text="@string/submit" />
+
+</LinearLayout>

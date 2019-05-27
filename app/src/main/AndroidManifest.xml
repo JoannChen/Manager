@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zuoyu.manager">
+
+    <!--网络访问权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--拨打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--友盟统计分析-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--iPhone6尺寸-->
+
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+
+        <!--友盟AppKey-->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58b5172465b6d64daa0000d4" />
+
+        <!--打包渠道，设置动态渠道变量-->
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--登录页-->
+        <activity android:name=".activity.LoginActivity" />
+
+        <!--首页-->
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"/>
+
+        <!--停车场详情-->
+        <activity android:name=".activity.ParkInfoActivity" />
+
+        <!--选择停车场-->
+        <activity android:name=".activity.ChoiceParkActivity" />
+
+        <!--个人中心-->
+        <activity android:name=".activity.MineActivity" />
+
+        <!--忘记密码-->
+        <activity android:name=".activity.ForgetActivity" />
+
+        <!--重置密码-->
+        <activity android:name=".activity.ResetActivity" />
+
+        <!--修改密码-->
+        <activity android:name=".activity.ModifyActivity" />
+
+        <!--我的消息-->
+        <activity android:name=".activity.MyMsgActivity" />
+
+        <!--意见反馈-->
+        <activity android:name=".activity.FeedbackActivity" />
+
+        <!--子订单列表-->
+        <activity android:name=".activity.ChildOrderActivity" />
+
+        <!--在场车辆详情／订单详情-->
+        <activity android:name=".activity.ParkingDetailsActivity" />
+        <activity android:name=".activity.OrderDetailsActivity" />
+
+        <!--报表查看-->
+        <activity android:name=".activity.DailyReportActivity" />
+
+        <!--日报表-->
+        <activity android:name=".activity.ReportDayActivity" />
+
+        <!--查看大图-->
+        <activity android:name=".activity.BigImageActivity" />
+
+
+        <!-- ========================= 图表区点击放大后的ActivityDialog类 ========================= -->
+
+
+        <!--点击放大后的饼状图 近一周支付方式统计-->
+        <activity
+            android:name=".activity.chart.PaymentActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/LandSpaceActivityDialogTheme" />
+
+        <!--点击放大后的折线图-->
+        <activity
+            android:name=".activity.chart.LineChartActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/LandSpaceActivityDialogTheme" />
+
+
+        <!-- =============================== 首页功能区Action类 ================================== -->
+
+        <!--异常记录(异常抬杆／未支付记)-->
+        <activity android:name=".activity.action.AbnormalActivity" />
+
+        <!--全部-->
+        <activity android:name=".activity.action.AllActivity" />
+
+        <!--结账统计-->
+        <activity android:name=".activity.action.CheckoutActivity" />
+
+        <!--财务分析-->
+        <activity
+            android:name=".activity.action.FinancialAnalysisActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <!--流量分析-->
+        <activity
+            android:name=".activity.action.FlowAnalysisActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <!--月卡管理-->
+        <activity android:name=".activity.action.MonthActivity" />
+
+        <!--订单记录-->
+        <activity android:name=".activity.action.OrderActivity" />
+
+        <!--在场车辆-->
+        <activity android:name=".activity.action.ParkingActivity" />
+
+        <!--报表查看-->
+        <activity android:name=".activity.action.ReportActivity" />
+
+        <!--商家管理-->
+        <activity android:name=".activity.action.BusinessActivity" />
+
+        <!--店铺详情-->
+        <activity android:name=".activity.BusinessCouponsActivity" />
+
+        <!--优惠券发放记录-->
+        <activity android:name=".activity.CouponsUseActivity" />
+
+        <!--余额使用记录-->
+        <activity android:name=".activity.BalanceUseActivity" />
+
+        <!--充值记录-->
+        <activity android:name=".activity.RechargeRecordActivity" />
+
+
+    </application>
+
+</manifest>

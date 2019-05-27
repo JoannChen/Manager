@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <LinearLayout style="@style/Layout_Match_Vertical_Style">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px480"
+            android:background="@mipmap/bg_mine"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--返回按钮-->
+
+            <ImageView
+                android:id="@id/iv_back"
+                style="@style/Back_Button_Style"
+                android:layout_gravity="start"
+                android:contentDescription="@string/app_icon" />
+
+            <!--个人头像-->
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="@dimen/px106"
+                android:layout_height="@dimen/px106"
+                android:layout_marginTop="@dimen/px26"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_me_head" />
+
+            <!--角色-->
+
+            <TextView
+                android:id="@+id/tv_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px36"
+                android:text="@string/app_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px30" />
+
+            <!--账号／手机号-->
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px68"
+                android:layout_marginTop="@dimen/px30"
+                android:text="@string/app_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px30" />
+        </LinearLayout>
+
+
+        <View style="@style/View_Line_Top_Style" />
+
+        <!--修改密码-->
+
+        <RelativeLayout
+            android:id="@+id/rl_modify"
+            style="@style/Mine_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@id/icon_1"
+                style="@style/Mine_Icon_ImageView_Style"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_me_modify" />
+
+            <TextView
+                style="@style/Mine_TextView_Style"
+                android:layout_toEndOf="@id/icon_1"
+                android:text="@string/modify_password" />
+
+            <ImageView
+                style="@style/Mine_More_Button_Style"
+                android:contentDescription="@string/app_icon" />
+
+        </RelativeLayout>
+
+        <View style="@style/View_Line_Style" />
+
+        <View style="@style/View_Line_Top_Style" />
+
+        <!--我的消息-->
+
+        <RelativeLayout
+            android:id="@+id/rl_msg"
+            style="@style/Mine_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@id/icon_2"
+                style="@style/Mine_Icon_ImageView_Style"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_me_msg" />
+
+
+            <TextView
+                style="@style/Mine_TextView_Style"
+                android:layout_toEndOf="@id/icon_2"
+                android:text="@string/my_message" />
+
+            <ImageView
+                style="@style/Mine_More_Button_Style"
+                android:contentDescription="@string/app_icon" />
+
+
+        </RelativeLayout>
+
+
+        <View style="@style/View_Line_Style" />
+
+        <!--联系无忧-->
+
+        <RelativeLayout
+            android:id="@+id/rl_contact"
+            style="@style/Mine_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@id/icon_3"
+                style="@style/Mine_Icon_ImageView_Style"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_me_contact" />
+
+            <TextView
+                style="@style/Mine_TextView_Style"
+                android:layout_toEndOf="@id/icon_3"
+                android:text="@string/contact_51park" />
+
+            <ImageView
+                style="@style/Mine_More_Button_Style"
+                android:contentDescription="@string/app_icon" />
+
+        </RelativeLayout>
+
+        <View style="@style/View_Line_Style" />
+
+        <!--当前版本-->
+
+        <RelativeLayout style="@style/Mine_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@id/icon_5"
+                style="@style/Mine_Icon_ImageView_Style"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_me_version" />
+
+            <TextView
+                android:id="@id/text_5"
+                style="@style/Mine_TextView_Style"
+                android:layout_toEndOf="@id/icon_5"
+                android:text="@string/version" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                style="@style/Mine_TextView_Style"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/text_5"
+                android:gravity="end|center_vertical"
+                android:textColor="@color/gray_font" />
+
+        </RelativeLayout>
+
+        <View style="@style/View_Line_Style" />
+
+        <View style="@style/View_Line_Top_Style" />
+
+        <!--意见反馈-->
+
+        <RelativeLayout
+            android:id="@+id/rl_feedback"
+            style="@style/Mine_RelativeLayout_Style">
+
+            <ImageView
+                android:id="@id/icon_2"
+                style="@style/Mine_Icon_ImageView_Style"
+                android:contentDescription="@string/app_icon"
+                android:src="@mipmap/icon_me_feedback" />
+
+            <TextView
+                style="@style/Mine_TextView_Style"
+                android:layout_toEndOf="@id/icon_2"
+                android:text="@string/feedback" />
+
+            <ImageView
+                style="@style/Mine_More_Button_Style"
+                android:contentDescription="@string/app_icon" />
+
+        </RelativeLayout>
+
+
+        <View style="@style/View_Line_Top_Style" />
+
+
+        <!--退出登录-->
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px94"
+            android:background="@color/white"
+            android:text="@string/exit_login"
+            android:textSize="@dimen/px40" />
+
+        <View style="@style/View_Line_Style" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--停车场详情-->
+
+    <com.zuoyu.manager.widget.AlphaTitleScrollView
+        android:id="@id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            style="@style/Layout_Match_Vertical_Style"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--车场背景图-->
+
+                <ImageView
+                    android:id="@id/iv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px382"
+                    android:contentDescription="@string/app_icon"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/bg_parkinfo" />
+
+                <!--车位数-->
+
+                <TextView
+                    android:id="@id/tv_count"
+                    android:layout_width="@dimen/px164"
+                    android:layout_height="@dimen/px50"
+                    android:layout_marginStart="@dimen/px526"
+                    android:layout_marginTop="@dimen/px286"
+                    android:alpha="0.8"
+                    android:background="@drawable/shape_park_count"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px26" />
+            </RelativeLayout>
+
+
+            <!--停车场名称-->
+
+            <TextView
+                android:id="@id/tv_name"
+                style="@style/Title_TextView_Style"
+                android:layout_marginStart="@dimen/px49"
+                android:layout_marginTop="@dimen/px20"
+                android:text="@string/app_text" />
+
+            <!--地址-->
+
+            <TextView
+                android:id="@id/tv_address"
+                style="@style/ParkInfo_Address_Phone_Style"
+                android:drawableStart="@mipmap/icon_parkinfo_address" />
+
+            <!--电话-->
+
+            <TextView
+                android:id="@id/tv_telephone"
+                style="@style/ParkInfo_Address_Phone_Style"
+                android:layout_marginBottom="@dimen/px26"
+                android:layout_marginTop="@dimen/px15"
+                android:drawableStart="@mipmap/icon_parkinfo_phone" />
+
+            <!--============================== 分割色块(2) ============================-->
+
+            <View style="@style/View_Division_Style" />
+
+            <!--车场编号-->
+
+            <TextView
+                android:id="@id/tv_num"
+                style="@style/ParkInfo_TextView_Style"
+                android:text="@string/park_num" />
+
+            <!--车场类型-->
+
+            <TextView
+                android:id="@id/tv_type"
+                style="@style/ParkInfo_TextView_Style"
+                android:text="@string/park_type" />
+
+            <!--营业时间-->
+
+            <TextView
+                android:id="@id/tv_time"
+                style="@style/ParkInfo_TextView_Style"
+                android:layout_marginBottom="@dimen/px32"
+                android:text="@string/business_hours" />
+
+            <!--============================== 分割色块(3) ============================-->
+
+            <View style="@style/View_Division_Style" />
+
+            <!--收费规则-->
+
+            <include layout="@layout/parkinfo_charge" />
+
+        </LinearLayout>
+    </com.zuoyu.manager.widget.AlphaTitleScrollView>
+
+
+    <!--标题栏-->
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88"
+        android:background="@color/gray_bg">
+
+        <!--返回按钮-->
+
+        <ImageView
+            android:id="@id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/btn_back" />
+
+        <!--标题栏-->
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/park_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px36" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

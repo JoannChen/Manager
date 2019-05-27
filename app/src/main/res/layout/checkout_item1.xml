@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!-- 结账统计-子条目 -->
+
+    <!--收费方式（岗亭、自助缴费、中央缴费）-->
+
+    <TextView
+        android:id="@id/tv_type"
+        style="@style/Report_Day_Font_List_Style"
+        android:layout_width="wrap_content" />
+
+    <!--&lt;!&ndash;现金&ndash;&gt;-->
+
+    <!--<TextView-->
+        <!--android:id="@id/text_1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/px78"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginEnd="@dimen/px50"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_marginStart="@dimen/px15"-->
+        <!--android:text="@string/cash_brackets"-->
+        <!--android:visibility="invisible"-->
+        <!--android:textColor="@color/gray_font"-->
+        <!--android:textSize="@dimen/px28" />-->
+
+    <!--现金总和-->
+
+    <TextView
+        android:id="@id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_type"
+        android:layout_marginStart="@dimen/px8"
+        android:gravity="center_vertical"
+        android:text="@string/count_"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/px50"
+        android:textColor="@color/red_font"
+        android:textSize="@dimen/px32" />
+
+    <!--¥-->
+
+    <TextView
+        android:id="@id/tv_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_type"
+        android:layout_toEndOf="@id/tv_type"
+        android:layout_toStartOf="@id/tv_price"
+        android:gravity="end"
+        android:text="@string/rmb"
+        android:textColor="@color/red_font"
+        android:textSize="@dimen/px28" />
+
+    <View
+        android:id="@id/line_1"
+        style="@style/View_Line_Style"
+        android:layout_below="@id/tv_type" />
+
+    <!--每笔收费详情列表-->
+
+    <LinearLayout
+        android:id="@id/ll_container_inner"
+        style="@style/Layout_Wrap_Vertical_White_Style"
+        android:layout_below="@id/line_1" />
+
+    <View
+        style="@style/View_Division_Style"
+        android:layout_below="@id/ll_container_inner" />
+
+
+</RelativeLayout>

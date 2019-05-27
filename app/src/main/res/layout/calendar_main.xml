@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <!--报表查看-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px64"
+        android:background="@color/gray_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Calendar_Font_Style"
+            android:text="@string/Sunday" />
+
+        <TextView
+            style="@style/Calendar_Font_Style"
+            android:text="@string/Monday" />
+
+        <TextView
+            style="@style/Calendar_Font_Style"
+            android:text="@string/Tuesday" />
+
+        <TextView
+            style="@style/Calendar_Font_Style"
+            android:text="@string/Wednesday" />
+
+        <TextView
+            style="@style/Calendar_Font_Style"
+            android:text="@string/Thursday" />
+
+        <TextView
+            style="@style/Calendar_Font_Style"
+            android:text="@string/Friday" />
+
+        <TextView
+            style="@style/Calendar_Font_Style"
+            android:text="@string/Saturday" />
+    </LinearLayout>
+
+
+
+    <include layout="@layout/layout_pull"/>
+
+
+</LinearLayout>

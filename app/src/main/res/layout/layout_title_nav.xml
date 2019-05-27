@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px94"
+    android:background="@drawable/draw_border_b">
+
+    <!--带选项卡的标题栏-->
+
+    <!--返回按钮-->
+
+    <ImageView
+        android:id="@id/iv_back"
+        style="@style/Back_Button_Style"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_icon" />
+
+
+    <RadioGroup
+        android:id="@id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <!-- 异常抬杠 -->
+
+        <RadioButton
+            android:id="@id/rb_left"
+            style="@style/RadioButton_Font_Style2"
+            android:checked="true"
+            android:text="@string/abnormal_lift" />
+
+        <!-- 未支付记录 -->
+
+        <RadioButton
+            android:id="@id/rb_right"
+            style="@style/RadioButton_Font_Style2"
+            android:layout_marginStart="@dimen/px30"
+            android:text="@string/unpaid_record" />
+    </RadioGroup>
+
+
+    <!--右侧文字-->
+
+    <TextView
+        android:id="@id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/px20"
+        android:text="@string/read_all"
+        android:textColor="@color/red_font"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--未支付记录-点击查看更多按钮样式-->
+
+    <item android:drawable="@mipmap/bg_calendar_no_today" android:state_checked="true" />
+
+
+</selector>

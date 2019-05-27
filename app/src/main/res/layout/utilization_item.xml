@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px60"
+    android:orientation="vertical">
+
+    <!--车位利用率子条目-->
+
+    <com.zuoyu.manager.widget.UtilizationProgress
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px40"
+        android:layout_marginBottom="@dimen/px20" />
+</LinearLayout>

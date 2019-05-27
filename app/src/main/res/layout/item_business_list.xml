@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:layout_height="@dimen/px240"
+    android:paddingBottom="@dimen/px34"
+    android:paddingEnd="@dimen/px40"
+    android:paddingStart="@dimen/px40"
+    android:paddingTop="@dimen/px46">
+
+    <!--【商家管理】子条目-->
+
+    <!--商家店名-->
+
+    <TextView
+        android:id="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:maxLines="1"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px34" />
+
+    <!--商家余额-->
+
+    <TextView
+        android:id="@id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_name"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tv_name"
+        android:gravity="end"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px26" />
+
+    <!--最后充值金额 12345小时45分钟-->
+
+    <TextView
+        android:id="@id/tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="@dimen/px36"
+        android:text="@string/app_text"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px26" />
+
+    <!--最后充值时间 2017-07-18 10:13:14-->
+
+    <TextView
+        android:id="@id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/app_text"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px26" />
+
+</RelativeLayout>

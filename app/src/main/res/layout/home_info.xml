@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!-- 停车场收入信息（2） -->
+
+    <!--应收金额 Left -->
+
+    <TextView
+        android:id="@id/text_1"
+        style="@style/Home_Body_String_Style"
+        android:text="@string/should_money" />
+
+    <TextView
+        android:id="@id/tv_should"
+        style="@style/Home_Body_Data_Style"
+        android:layout_below="@id/text_1" />
+
+    <!--分割线-->
+
+    <View
+        android:id="@id/line_1"
+        style="@style/Home_Body_Line_Style"
+        android:layout_toEndOf="@id/text_1" />
+
+    <!--优惠金额 Right -->
+
+    <TextView
+        android:id="@id/text_2"
+        style="@style/Home_Body_String_Style"
+        android:layout_toEndOf="@id/line_1"
+        android:text="@string/discount_money" />
+
+    <TextView
+        android:id="@id/tv_discount"
+        style="@style/Home_Body_Data_Style"
+        android:layout_below="@id/text_2"
+        android:layout_toEndOf="@id/line_1" />
+
+    <!-- ========================= 分割色块 ========================== -->
+
+    <View
+        android:id="@id/line_2"
+        style="@style/View_Division_Style"
+        android:layout_below="@id/tv_should" />
+
+    <!-- ========================= 分割色块 ========================== -->
+
+    <!--昨日车位周转率 Left -->
+
+    <TextView
+        android:id="@id/text_3"
+        style="@style/Home_Body_String_Style"
+        android:layout_below="@id/line_2"
+        android:text="@string/turnover_rate" />
+
+    <TextView
+        android:id="@+id/tv_turnover"
+        style="@style/Home_Body_Data_Style"
+        android:layout_below="@id/text_3"
+        android:textColor="@color/red_font" />
+
+    <!--分割线-->
+
+    <View
+        android:id="@id/line_3"
+        style="@style/Home_Body_Line_Style"
+        android:layout_below="@id/line_2"
+        android:layout_toEndOf="@id/text_3" />
+
+    <!--昨日车位利用率 Right -->
+
+    <TextView
+        android:id="@id/text_4"
+        style="@style/Home_Body_String_Style"
+        android:layout_below="@id/line_2"
+        android:layout_toEndOf="@id/line_3"
+        android:text="@string/utilization_rate" />
+
+    <TextView
+        android:id="@+id/tv_utilization"
+        style="@style/Home_Body_Data_Style"
+        android:layout_below="@id/text_4"
+        android:layout_toEndOf="@id/line_3"
+        android:textColor="@color/red_font" />
+
+    <!-- ========================= 分割色块 ========================== -->
+
+    <View
+        style="@style/View_Division_Style"
+        android:layout_below="@id/tv_turnover" />
+
+    <!-- ========================= 分割色块 ========================== -->
+
+</RelativeLayout>

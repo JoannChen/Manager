@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+
+    <!--停车场详情-收费规则-动态加载-布局-->
+
+    <!--收费规则-->
+
+    <TextView
+        android:id="@id/tv_time"
+        style="@style/ParkInfo_TextView_Style"
+        android:text="@string/charging_rules"
+        android:textSize="@dimen/px30" />
+
+    <!--白天计费规则-->
+
+    <TextView
+        android:id="@id/tv_day"
+        style="@style/ParkInfo_Rule_Style"
+        android:layout_below="@id/tv_time"
+        android:drawableStart="@mipmap/icon_parkinfo_sun"
+        android:text="@string/day" />
+
+    <View
+        android:id="@id/line_1"
+        style="@style/View_Line_ParkInfo_Style"
+        android:layout_below="@id/tv_day" />
+
+    <!-- 白天价格列表容器 -->
+
+    <LinearLayout
+        android:id="@+id/ll_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px50"
+        android:orientation="vertical" />
+
+    <!--夜间计费规则-->
+
+    <TextView
+        android:id="@id/tv_night"
+        style="@style/ParkInfo_Rule_Style"
+        android:layout_below="@id/ll_day"
+        android:drawableStart="@mipmap/icon_parkinfo_moon"
+        android:text="@string/night" />
+
+
+    <View
+        android:id="@id/line_2"
+        style="@style/View_Line_ParkInfo_Style"
+        android:layout_below="@id/tv_night" />
+
+
+    <!-- 夜间价格列表容器 -->
+
+    <LinearLayout
+        android:id="@+id/ll_night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px160"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>

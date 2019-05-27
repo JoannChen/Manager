@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/white"
+    android:gravity="center_horizontal">
+
+    <!-- 重置密码-忘记密码-第二步 -->
+
+
+    <!-- 手机号 -->
+
+    <com.zuoyu.manager.widget.ClearEditText
+        android:id="@id/et_username"
+        style="@style/Common_EditText_Style"
+        android:hint="@string/please_input_phone"
+        android:inputType="phone"
+        android:maxLength="11" />
+
+    <!-- 获取验证码 -->
+
+    <RelativeLayout
+        android:layout_width="@dimen/px700"
+        android:layout_height="@dimen/px100"
+        android:layout_marginTop="@dimen/px24"
+        android:background="@drawable/draw_border_all">
+
+        <TextView
+            android:id="@+id/tv_verify"
+            android:layout_width="@dimen/px256"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/get_verify"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px28" />
+
+        <com.zuoyu.manager.widget.ClearEditText
+            android:id="@+id/et_verify"
+            style="@style/Common_EditText_Style"
+            android:layout_marginTop="0dp"
+            android:layout_toStartOf="@id/tv_verify"
+            android:background="@color/transparent"
+            android:hint="@string/please_input_verify"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <View
+            style="@style/Home_Body_Line_Style"
+            android:layout_height="@dimen/px60"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tv_verify" />
+
+    </RelativeLayout>
+
+
+    <!-- 下一步按钮 -->
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/Common_Button_Style"
+        android:layout_marginTop="@dimen/px134"
+        android:text="@string/next" />
+
+
+</LinearLayout>

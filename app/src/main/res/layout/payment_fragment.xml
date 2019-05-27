@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/white">
+
+    <!--财务分析——支付方式-->
+
+    <RelativeLayout
+        style="@style/Layout_Wrap_Vertical_White_Style"
+        android:layout_height="@dimen/px400">
+
+        <TextView
+            android:id="@id/tv_desc"
+            style="@style/Chart_Production_Font_Style"
+            android:layout_marginTop="@dimen/px40"
+            android:text="@string/chart_prompt_payment_7" />
+
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@id/pieChartView"
+            android:layout_width="@dimen/px256"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_desc"
+            android:layout_marginStart="@dimen/px100" />
+
+        <!--微信-->
+
+        <TextView
+            android:id="@id/text_3"
+            style="@style/Home_PayWay_Style"
+            android:layout_alignTop="@id/pieChartView"
+            android:layout_marginTop="@dimen/px80"
+            android:drawableStart="@mipmap/icon_home_pie_green"
+            android:text="@string/wechat" />
+
+        <TextView
+            android:id="@id/tv_wechat"
+            style="@style/Home_PayWay_Style"
+            android:layout_alignBaseline="@id/text_3"
+            android:layout_marginStart="@dimen/px40"
+            android:layout_toEndOf="@id/text_3"
+            android:text="@string/count_" />
+
+        <!--支付宝-->
+
+        <TextView
+            android:id="@id/text_4"
+            style="@style/Home_PayWay_Style"
+            android:layout_below="@id/text_3"
+            android:drawableStart="@mipmap/icon_home_pie_blue"
+            android:text="@string/alipay" />
+
+
+        <TextView
+            android:id="@id/tv_alipay"
+            style="@style/Home_PayWay_Style"
+            android:layout_alignBaseline="@id/text_4"
+            android:layout_alignStart="@id/tv_wechat"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/text_4"
+            android:text="@string/count_" />
+
+        <!--现金-->
+
+        <TextView
+            android:id="@id/text_5"
+            style="@style/Home_PayWay_Style"
+            android:layout_below="@id/text_4"
+            android:drawableStart="@mipmap/icon_home_pie_red"
+            android:text="@string/cash" />
+
+
+        <TextView
+            android:id="@id/tv_cash"
+            style="@style/Home_PayWay_Style"
+            android:layout_alignBaseline="@id/text_5"
+            android:layout_alignStart="@id/tv_wechat"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/text_5"
+            android:text="@string/count_" />
+
+        <!--ETC-->
+
+        <TextView
+            android:id="@id/text_6"
+            style="@style/Home_PayWay_Style"
+            android:layout_below="@id/text_5"
+            android:drawableStart="@mipmap/icon_home_pie_orange"
+            android:text="@string/etc" />
+
+
+        <TextView
+            android:id="@id/tv_etc"
+            style="@style/Home_PayWay_Style"
+            android:layout_alignBaseline="@id/text_6"
+            android:layout_alignStart="@id/tv_wechat"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/text_6"
+            android:text="@string/count_" />
+
+        <!--总收入（和支付方式对齐）-->
+
+        <TextView
+            android:id="@id/tv_day_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_desc"
+            android:layout_alignStart="@id/text_3"
+            android:text="@string/day7_income_colon"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px20" />
+
+    </RelativeLayout>
+
+    <View style="@style/View_Division_Style" />
+
+    <!--图表区两个个标题切换-->
+
+    <RadioGroup
+        android:id="@id/radioGroup"
+        style="@style/Chart_RadioGroup_Nav_Style"
+        android:layout_marginBottom="@dimen/px36">
+
+        <RadioButton
+            android:id="@id/tv_day7"
+            style="@style/Chart_RadioButton_Nav_Style"
+            android:text="@string/day7" />
+
+        <RadioButton
+            android:id="@id/tv_day30"
+            style="@style/Chart_RadioButton_Nav_Style"
+            android:text="@string/day30" />
+    </RadioGroup>
+
+
+    <View style="@style/View_Line_Style" />
+
+    <LinearLayout
+        android:id="@id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

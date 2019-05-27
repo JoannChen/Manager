@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zuoyu.manager.widget.pullable.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/refreshLayout"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <include layout="@layout/layout_pull_header_down_refresh" />
+
+    <com.zuoyu.manager.widget.pullable.PullScrollView style="@style/Layout_Match_Vertical_Style">
+        <!--首页-->
+
+        <LinearLayout style="@style/Layout_Match_Vertical_Style">
+
+            <!--停车场chart模块（今日收入）-->
+            <include layout="@layout/home_chart" />
+
+            <!--停车场body模块（应收金额／优惠金额／周转率／利用率）-->
+            <include layout="@layout/home_info" />
+
+
+            <!--功能区列表-->
+
+            <com.zuoyu.manager.widget.MyGridView
+                android:id="@id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/line_gray"
+                android:cacheColorHint="@color/transparent"
+                android:horizontalSpacing="@dimen/px2"
+                android:listSelector="@color/transparent"
+                android:numColumns="3"
+                android:verticalSpacing="@dimen/px2" />
+
+
+            <!--消息通知-->
+
+            <TextView
+                android:id="@id/tv_notice"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px92"
+                android:layout_marginBottom="@dimen/px20"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@color/white"
+                android:drawablePadding="@dimen/px22"
+                android:drawableStart="@mipmap/icon_prompt"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/px60"
+                android:paddingStart="@dimen/px60"
+                android:text="@string/no_new_msg"
+                android:textColor="@color/gray_font"
+                android:textSize="@dimen/px26" />
+
+            <!--我是有底线的-->
+
+            <include layout="@layout/layout_baseline" />
+
+        </LinearLayout>
+
+    </com.zuoyu.manager.widget.pullable.PullScrollView>
+
+    <include layout="@layout/layout_pull_footer_up_loading" />
+
+</com.zuoyu.manager.widget.pullable.PullToRefreshLayout>

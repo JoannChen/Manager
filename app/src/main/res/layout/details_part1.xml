@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!--在场车辆详情／订单详情（1）-->
+
+
+    <!--停车场名称-->
+
+    <TextView
+        android:id="@id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px42"
+        android:gravity="center"
+        android:text="@string/app_text"
+        android:textSize="@dimen/px38"
+        android:textStyle="bold" />
+
+    <!--停车费-->
+
+    <TextView
+        android:id="@id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginBottom="@dimen/px48"
+        android:layout_marginTop="@dimen/px46"
+        android:gravity="center"
+        android:text="@string/app_text"
+        android:textColor="@color/red_font"
+        android:textSize="@dimen/px40" />
+
+    <!--分割线-->
+
+    <View
+        android:id="@id/line_1"
+        style="@style/View_Line_Style"
+        android:layout_below="@id/tv_price" />
+
+    <!--车牌号-->
+
+    <TextView
+        android:id="@id/text_1"
+        style="@style/Home_Body_String_Style"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/line_1"
+        android:layout_marginStart="@dimen/px108"
+        android:drawableStart="@mipmap/icon_details_plate"
+        android:text="@string/plate" />
+
+    <TextView
+        android:id="@id/tv_plate"
+        style="@style/Home_Body_Data_Style"
+        android:layout_below="@id/text_1"
+        android:textSize="@dimen/px28" />
+
+    <!--分割线-->
+
+    <View
+        android:id="@id/line_2"
+        style="@style/Home_Body_Line_Style"
+        android:layout_below="@id/line_1"
+        android:layout_toEndOf="@id/tv_plate" />
+
+    <!--停车时长-->
+
+    <TextView
+        android:id="@id/text_2"
+        style="@style/Home_Body_String_Style"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/line_1"
+        android:layout_marginStart="@dimen/px88"
+        android:layout_toEndOf="@id/line_2"
+        android:drawableStart="@mipmap/icon_details_long"
+        android:text="@string/park_long" />
+
+
+    <TextView
+        android:id="@id/tv_long"
+        style="@style/Home_Body_Data_Style"
+        android:layout_alignTop="@id/tv_plate"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/line_2"
+        android:textSize="@dimen/px28" />
+
+    <!--分割色块-->
+
+    <View
+        android:id="@id/line_3"
+        style="@style/View_Division_Style"
+        android:layout_below="@id/tv_plate" />
+
+
+</RelativeLayout>

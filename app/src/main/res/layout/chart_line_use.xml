@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+
+    <TextView
+        android:id="@id/tv_desc"
+        style="@style/Chart_Production_Font_Style"
+        android:layout_marginTop="@dimen/px37" />
+
+    <ImageView
+        android:id="@id/iv_back"
+        style="@style/Chart_Close_Btn_Style"
+        android:contentDescription="@string/app_icon" />
+
+    <TextView
+        android:id="@+id/tv_day_rate"
+        style="@style/Chart_Production_Font_Right_Big_Style"
+        android:layout_alignBaseline="@id/tv_desc"
+        android:layout_toStartOf="@id/iv_back" />
+
+    <com.zuoyu.manager.widget.hellochart.chart.LineChartView
+        android:id="@id/lineChartView"
+        style="@style/Chart_Style"
+        android:layout_below="@id/tv_desc" />
+</RelativeLayout>
+
+

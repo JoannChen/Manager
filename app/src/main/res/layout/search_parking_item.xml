@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:layout_height="@dimen/px162">
+
+    <!--在场车辆字条目-->
+
+
+    <!--车牌号-->
+
+    <TextView
+        android:id="@id/tv_plate"
+        android:layout_width="@dimen/px160"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px32"
+        android:layout_marginTop="@dimen/px30"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px32" />
+
+    <!--会员车还是临停车-->
+
+    <TextView
+        android:id="@id/iv_type"
+        android:layout_width="@dimen/px75"
+        android:layout_height="@dimen/px40"
+        android:layout_marginStart="@dimen/px10"
+        android:layout_marginTop="@dimen/px30"
+        android:layout_toEndOf="@id/tv_plate"
+        android:background="@drawable/shape_see_image"
+        android:gravity="center"
+        android:text="@string/app_text"
+        android:textColor="@color/btn_checked"
+        android:textSize="@dimen/px30" />
+
+    <!--入场图标-->
+
+    <TextView
+        android:id="@id/icon_1"
+        android:layout_width="@dimen/px60"
+        android:layout_height="@dimen/px30"
+        android:layout_alignStart="@id/tv_plate"
+        android:layout_below="@id/tv_plate"
+        android:layout_marginTop="@dimen/px32"
+        android:background="@drawable/draw_border_all"
+        android:gravity="center"
+        android:text="@string/into"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px20" />
+
+
+    <!--入场时间-->
+
+    <TextView
+        android:id="@id/tv_inTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_plate"
+        android:layout_marginStart="@dimen/px14"
+        android:layout_marginTop="@dimen/px30"
+        android:layout_toEndOf="@id/icon_1"
+        android:text="@string/time_"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px26" />
+
+
+    <!--车辆状态（未支付／已超时／VIP）-->
+
+    <ImageView
+        android:id="@id/iv_status"
+        android:layout_width="@dimen/px80"
+        android:layout_height="@dimen/px80"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/app_icon" />
+
+
+    <!--停车时长-->
+
+    <TextView
+        android:id="@id/tv_long"
+        android:layout_width="@dimen/px240"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_inTime"
+        android:layout_below="@id/tv_plate"
+        android:layout_toStartOf="@id/iv_status"
+        android:maxLines="1"
+        android:text="@string/long_"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px26" />
+
+
+    <!--人民币符号¥-->
+
+    <TextView
+        android:id="@id/tv_rmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_plate"
+        android:layout_alignStart="@id/tv_long"
+        android:layout_toEndOf="@id/iv_type"
+        android:gravity="end|bottom"
+        android:text="@string/rmb"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px26" />
+
+
+    <!--停车费-->
+
+
+    <TextView
+        android:id="@id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_plate"
+        android:layout_toEndOf="@id/tv_rmb"
+        android:layout_toStartOf="@id/iv_status"
+        android:maxLines="1"
+        android:text="@string/count_"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px34" />
+
+
+</RelativeLayout>

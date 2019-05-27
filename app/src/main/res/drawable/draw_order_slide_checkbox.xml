@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--订单记录-筛选条件-多选按钮样式-->
+
+    <item android:drawable="@drawable/shape_patrol_corners_red" android:state_checked="true" />
+    <item android:drawable="@drawable/shape_patrol_corners_gray" android:state_checked="false" />
+    <item android:drawable="@drawable/shape_patrol_corners_red" android:state_pressed="true" />
+    <item android:drawable="@drawable/shape_patrol_corners_gray" android:state_pressed="false" />
+
+</selector>

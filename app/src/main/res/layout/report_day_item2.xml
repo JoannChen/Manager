@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!--日报表-子条目-内层列表-->
+
+
+    <!--收费说明-->
+
+    <TextView
+        android:id="@id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20"
+        android:layout_marginStart="@dimen/px62"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px28" />
+
+    <!--收费金额-->
+
+    <TextView
+        android:id="@id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/text_1"
+        android:layout_marginEnd="@dimen/px62"
+        android:layout_toEndOf="@id/text_1"
+        android:gravity="end"
+        android:text="@string/price_"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px28" />
+
+</RelativeLayout>

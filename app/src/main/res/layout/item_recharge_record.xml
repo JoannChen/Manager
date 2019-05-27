@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:layout_height="@dimen/px140"
+    android:paddingBottom="@dimen/px26"
+    android:paddingEnd="@dimen/px40"
+    android:paddingStart="@dimen/px40"
+    android:paddingTop="@dimen/px26">
+
+    <!--充值记录子条目-->
+
+    <TextView
+        android:id="@id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recharge_money"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px30" />
+
+    <!--充值金额-->
+
+    <TextView
+        android:id="@id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/text_1"
+        android:gravity="end"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px32" />
+
+    <!--充值日期 2017-07-18 10:13:14-->
+
+    <TextView
+        android:id="@id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/app_text"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px30" />
+
+    <!--账户剩余时长-->
+
+    <TextView
+        android:id="@id/tv_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/tv_time"
+        android:gravity="end"
+        android:text="@string/app_text"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px30" />
+
+</RelativeLayout>

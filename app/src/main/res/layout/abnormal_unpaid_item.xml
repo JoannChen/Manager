@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!--未支付记录-子条目-->
+
+
+    <!-- =========================== 第一行 ============================== -->
+
+
+    <RelativeLayout
+        android:id="@id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px104">
+
+
+        <!--查看图片-->
+
+        <TextView
+            android:id="@id/tv_image"
+            style="@style/Order_Font_Style"
+            android:layout_width="@dimen/px144"
+            android:layout_height="@dimen/px48"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/px42"
+            android:background="@drawable/shape_see_image"
+            android:text="@string/view_picture"
+            android:textColor="@color/btn_checked" />
+
+        <!--车牌号-->
+
+        <TextView
+            android:id="@id/tv_plate"
+
+            style="@style/Order_Font_Style" />
+
+
+        <!--票号-->
+
+        <TextView
+            android:id="@id/tv_num"
+            style="@style/Order_Font_Style"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@id/tv_plate"
+            android:layout_toStartOf="@id/tv_image"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/gray_font" />
+
+
+    </RelativeLayout>
+
+    <!--分割线 3 -->
+
+    <View
+        android:id="@id/line_2"
+        style="@style/View_Line_Style"
+        android:layout_below="@id/line_1"
+        android:layout_marginBottom="@dimen/px15" />
+
+    <!-- =========================== 第二行 ============================== -->
+
+    <!--出场时间-->
+
+    <TextView
+        android:id="@id/tv_outTime"
+        style="@style/Unpaid_Font_Style"
+        android:layout_height="@dimen/px60"
+        android:layout_below="@id/line_2"
+        android:text="@string/out_time_colon" />
+
+    <!--出口-->
+
+    <TextView
+        android:id="@id/tv_out"
+        style="@style/Unpaid_Font_Style"
+        android:layout_height="@dimen/px60"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/line_2"
+        android:layout_marginStart="@dimen/px142" />
+
+
+    <!-- =========================== 第三／四行 ============================== -->
+
+    <!--默认隐藏，点开显示-->
+    <ViewSwitcher
+        android:id="@id/viewSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_outTime"
+        android:background="@color/transparent"
+        android:inAnimation="@anim/slide_in_top"
+        android:outAnimation="@anim/slide_out_top"
+        android:persistentDrawingCache="animation"
+        android:visibility="gone">
+
+        <RelativeLayout style="@style/Layout_Wrap_Vertical_White_Style">
+
+            <!--入场时间-->
+
+            <TextView
+                android:id="@id/tv_inTime"
+                style="@style/Unpaid_Font_Style"
+                android:text="@string/in_time_colon" />
+
+            <!--停车时长-->
+
+            <TextView
+                android:id="@id/tv_long"
+                style="@style/Unpaid_Font_Style"
+                android:layout_below="@id/tv_inTime"
+                android:text="@string/park_long_colon" />
+
+            <!--入口-->
+
+            <TextView
+                android:id="@id/tv_in"
+                style="@style/Unpaid_Font_Style"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/px142" />
+
+            <!--操作员-->
+
+            <TextView
+                android:id="@id/tv_operator"
+                style="@style/Unpaid_Font_Style"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tv_inTime"
+                android:layout_marginStart="@dimen/px142"
+                android:text="@string/operator_colon" />
+
+        </RelativeLayout>
+    </ViewSwitcher>
+
+
+    <!--分割线-->
+
+    <View
+        android:id="@id/line_3"
+        style="@style/View_Line_Style"
+        android:layout_below="@id/viewSwitcher"
+        android:layout_marginTop="@dimen/px15" />
+
+    <!-- =========================== 第五行 ============================== -->
+
+
+    <LinearLayout
+        android:id="@id/line_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px62"
+        android:layout_below="@id/line_3">
+
+        <!--优惠-->
+
+        <TextView
+            android:id="@id/tv_discount"
+            style="@style/Order_Font_Style" />
+
+
+        <!--分割线  -->
+
+        <View style="@style/Unpaid_Line_Style" />
+
+        <!--应收-->
+
+        <TextView
+            android:id="@id/tv_should"
+            style="@style/Order_Font_Style" />
+
+
+        <!--分割线 -->
+
+        <View style="@style/Unpaid_Line_Style" />
+
+
+        <!--逃单-->
+
+        <TextView
+            android:id="@id/tv_escape"
+            style="@style/Order_Font_Style" />
+
+    </LinearLayout>
+
+    <!--分割线 6 -->
+
+    <View
+        android:id="@id/line_6"
+        style="@style/View_Line_Style"
+        android:layout_below="@id/line_5" />
+
+    <!-- =========================== 第四行 ============================== -->
+
+
+    <!--查看更多按钮-->
+
+    <CheckBox
+        android:id="@id/iv_more"
+        android:layout_width="@dimen/px20"
+        android:layout_height="@dimen/px15"
+        android:layout_below="@id/line_6"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/px20"
+        android:background="@drawable/draw_more_btn"
+        android:button="@null"
+        android:checked="false"
+        android:contentDescription="@string/app_icon"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+
+</RelativeLayout>

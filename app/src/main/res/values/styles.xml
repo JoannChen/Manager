@@ -1,0 +1,682 @@
+<resources>
+
+    <!--查看图片按钮样式-->
+    <style name="ImageView_See_Image_Style">
+        <item name="android:layout_width">@dimen/px144</item>
+        <item name="android:layout_height">@dimen/px48</item>
+        <item name="android:layout_marginTop">@dimen/px30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/shape_see_image</item>
+        <item name="android:text">@string/view_picture</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/btn_checked</item>
+    </style>
+
+
+    <!--图表区标题栏切换按钮样式-->
+    <style name="Chart_RadioGroup_Nav_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/px50</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/shape_chart_nav_bg</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/px35</item>
+        <item name="android:textColor">@drawable/font_chart_rbtn</item>
+    </style>
+
+    <!--图表区标题栏切换按钮样式-->
+    <style name="Chart_RadioButton_Nav_Style">
+        <item name="android:layout_width">@dimen/px160</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/draw_chart_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@drawable/font_chart_rbtn</item>
+    </style>
+
+    <!--对话框去除背景黑框样式-->
+    <style name="Dialog_Theme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!--图表-样式-->
+    <style name="Chart_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingStart">@dimen/px54</item>
+        <item name="android:paddingEnd">@dimen/px54</item>
+        <item name="android:paddingTop">@dimen/px30</item>
+        <item name="android:paddingBottom">@dimen/px30</item>
+    </style>
+
+    <!--图表-介绍-样式-->
+    <style name="Chart_Production_Font_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/px40</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <style name="Chart_Production_Font_Big_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/px40</item>
+        <item name="android:textSize">@dimen/px36</item>
+        <item name="android:layout_marginTop">@dimen/px50</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <!--图表-介绍-右侧文字-样式-->
+    <style name="Chart_Production_Font_Right_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/px54</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">@dimen/px20</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <style name="Chart_Production_Font_Right_Big_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignTop">@id/text_1</item>
+        <item name="android:layout_marginStart">@dimen/px100</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+
+    <!--图表-放大后-关闭按钮-样式表-->
+    <style name="Chart_Close_Btn_Style">
+        <item name="android:layout_width">@dimen/px52</item>
+        <item name="android:layout_height">@dimen/px52</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginStart">@dimen/px100</item>
+        <!--<item name="android:layout_marginEnd">@dimen/px54</item>-->
+        <item name="android:layout_marginTop">@dimen/px40</item>
+        <item name="android:src">@mipmap/btn_chart_close</item>
+    </style>
+
+
+    <!--结账统计-->
+    <style name="Checkout_Font_Black_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px20</item>
+        <item name="android:layout_marginStart">@dimen/px20</item>
+        <item name="android:layout_marginBottom">@dimen/px20</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px26</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+    <!--商家管理（商家总数／优惠券总数／充值总数）文字+内容-样式表-->
+    <style name="Business_Font_Black_Style">
+        <item name="android:layout_width">@dimen/px250</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px46</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/px34</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <style name="Business_Font_Red_Style">
+        <item name="android:layout_width">@dimen/px250</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px48</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">@string/count_</item>
+        <item name="android:textSize">@dimen/px34</item>
+        <item name="android:textColor">@color/red_font</item>
+    </style>
+
+
+    <!--日报表（总应收／总实收／总优惠）文字+内容-样式表-->
+    <style name="Report_Day_Font_Black_Style">
+        <item name="android:layout_width">@dimen/px250</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/px34</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <style name="Report_Day_Font_Gray_Style">
+        <item name="android:layout_width">@dimen/px250</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px30</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">@string/price_</item>
+        <item name="android:textSize">@dimen/px32</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+
+    <!--日报表-本地现金／本地非现金／无忧平台／月卡收入／第三方平台收入-样式表-->
+    <style name="Report_Day_Font_List_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px78</item>
+        <item name="android:layout_marginStart">@dimen/px62</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+
+    <!--日报表-列表外层布局-样式表-->
+    <style name="Report_Day_LLayout_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">@dimen/px22</item>
+    </style>
+
+    <!--下拉刷新上拉加载图标样式-->
+
+    <style name="Pull_Image_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginStart">@dimen/px160</item>
+    </style>
+
+    <!--自定义日期字体样式表-->
+
+    <style name="Calendar_Font_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/px26</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <!--月卡管理子条目字体样式-->
+
+    <style name="Month_Font_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <!--加载框样式-->
+    <style name="Loading_Dialog_Style" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!--Button点击和未点击时的样式-->
+
+    <style name="Common_Button_Style">
+        <item name="android:layout_width">@dimen/px700</item>
+        <item name="android:layout_height">@dimen/px100</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/draw_btn_unchecked</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+
+    <!--修改密码框-样式表-->
+
+    <style name="EditText_Reset_Password_Style">
+        <item name="android:layout_width">@dimen/px600</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingStart">@dimen/px30</item>
+        <item name="android:paddingEnd">@dimen/px10</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:digits">0123456789QqWwEeRrTtYyUuIiOoPpLlKkJjHhGgFfDdSsAaZzXxCcVvBbNnMm
+        </item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">10</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:textColorHint">@color/gray_font</item>
+    </style>
+
+    <!--EditText输入框-带边框-样式-->
+
+    <style name="Common_EditText_Style">
+        <item name="android:layout_width">@dimen/px700</item>
+        <item name="android:layout_height">@dimen/px100</item>
+        <item name="android:layout_marginTop">@dimen/px72</item>
+        <item name="android:paddingStart">@dimen/px30</item>
+        <item name="android:paddingEnd">@dimen/px30</item>
+        <item name="android:background">@drawable/draw_border_all</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:textColorHint">@color/gray_font</item>
+    </style>
+
+    <!--仿iOS风格的搜索框样式-->
+    <style name="Search_EditText_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px60</item>
+        <item name="android:background">@mipmap/bg_search</item>
+        <item name="android:drawablePadding">@dimen/px20</item>
+        <item name="android:paddingStart">@dimen/px30</item>
+        <item name="android:paddingEnd">@dimen/px20</item>
+        <item name="android:drawableStart">@mipmap/icon_search</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:hint">@string/input_park</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray_font</item>
+    </style>
+
+    <!--仿iOS风格的搜索框-字体样式-->
+    <style name="Search_TextView_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--未支付记录-分割线-样式表-->
+    <style name="Unpaid_Line_Style">
+        <item name="android:layout_width">@dimen/px1</item>
+        <item name="android:layout_height">@dimen/px40</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/line_gray</item>
+    </style>
+
+    <!--未支付记录-灰色字体（入场时间／出场时间）-样式表-->
+    <style name="Unpaid_Font_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/px82</item>
+        <item name="android:layout_marginStart">@dimen/px60</item>
+        <item name="android:layout_marginEnd">@dimen/px42</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+    <!-- 选项卡（异常抬杆／未支付记录）（流量分析／财务分析）样式表 -->
+    <style name="RadioButton_Font_Style2">
+        <item name="android:layout_width">@dimen/px180</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/px36</item>
+        <item name="android:textColor">@drawable/font_nav_rbtn</item>
+        <item name="android:background">@drawable/draw_nav_rbtn_abnormal</item>
+    </style>
+
+    <!-- 选项卡（临停收入／支付方式）（出入场车辆／利用率／周转率）样式表 -->
+    <style name="RadioButton_Font_Style">
+        <item name="android:layout_width">@dimen/px180</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/px36</item>
+        <item name="android:textColor">@drawable/font_nav_rbtn</item>
+        <item name="android:background">@drawable/draw_nav_rbtn</item>
+    </style>
+
+
+    <!--异常抬杠-黑体字（车场编号／类型／营业时间）-样式表-->
+    <!--订单记录-侧边-筛选-样式表-->
+    <style name="Exception_Font_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:layout_marginTop">@dimen/px36</item>
+    </style>
+
+    <!--订单记录-侧边筛选-支付类型-样式表-->
+    <style name="Order_Choice_Style">
+        <item name="android:layout_width">@dimen/px134</item>
+        <item name="android:layout_height">@dimen/px62</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:background">@drawable/draw_order_slide_checkbox</item>
+    </style>
+
+
+    <!--订单记录-子条目文字（车牌号／停车时长／停车费用）-样式表-->
+    <style name="Order_Font_Style">
+        <item name="android:layout_width">@dimen/px249</item>
+        <item name="android:layout_height">@dimen/px62</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <!--订单记录-子条目图片分割线-样式表-->
+    <style name="Order_Image_Style">
+        <item name="android:layout_width">@dimen/px1</item>
+        <item name="android:layout_height">@dimen/px108</item>
+        <item name="android:layout_marginTop">@dimen/px18</item>
+        <item name="android:layout_marginBottom">@dimen/px18</item>
+        <item name="android:background">@color/line_gray</item>
+    </style>
+
+
+    <!--停车场详情-收费规则（白天／夜间）-样式表-->
+    <style name="Details_Font_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px30</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+
+    <!-- =========================== 首页 START =========================== -->
+
+    <!--首页-支付方式（微信／支付宝／现金）样式表-->
+    <style name="Home_PayWay_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/pieChartView</item>
+        <item name="android:layout_marginTop">@dimen/px18</item>
+        <item name="android:layout_marginStart">@dimen/px150</item>
+        <item name="android:drawablePadding">@dimen/px18</item>
+        <item name="android:textSize">@dimen/px18</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+
+    <style name="Home_PayWay_Big_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toEndOf">@id/pieChartView</item>
+        <item name="android:layout_marginTop">@dimen/px18</item>
+        <item name="android:layout_marginStart">@dimen/px30</item>
+        <item name="android:drawablePadding">@dimen/px18</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+    <!--首页-车场收入文本（应收金额／优惠金额／昨日车位周转率等）样式表-->
+    <style name="Home_Body_String_Style">
+        <item name="android:layout_width">@dimen/px374</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/px46</item>
+        <item name="android:drawablePadding">@dimen/px18</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px32</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <!--首页-竖向分割线-样式表-->
+    <style name="Home_Body_Line_Style">
+        <item name="android:layout_width">@dimen/px2</item>
+        <item name="android:layout_height">@dimen/px162</item>
+        <item name="android:layout_marginTop">@dimen/px20</item>
+        <item name="android:background">@color/line_gray</item>
+    </style>
+
+    <!--首页-车场收入数据（应收金额／优惠金额／昨日车位周转率等）样式表-->
+    <style name="Home_Body_Data_Style">
+        <item name="android:layout_width">@dimen/px374</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/px30</item>
+        <item name="android:paddingBottom">@dimen/px46</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px40</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+    <!-- =========================== 首页 END =========================== -->
+
+
+    <!--共用-返回按钮-样式表-->
+    <style name="Back_Button_Style">
+        <item name="android:layout_width">@dimen/px100</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:src">@mipmap/btn_back</item>
+    </style>
+
+    <!--共用-标题栏-样式表-->
+    <style name="Title_TextView_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px36</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- 【子条目】公用样式（一个组件，左侧自定义图标，右侧更多按钮） -->
+    <style name="Common_Item_Text_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px136</item>
+        <item name="android:drawablePadding">@dimen/px20</item>
+        <item name="android:drawableEnd">@mipmap/btn_more</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">@dimen/px20</item>
+        <item name="android:paddingRight">@dimen/px20</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <!--登录-输入框-样式表-->
+    <style name="Login_EditText_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_marginEnd">@dimen/px40</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:textColorHint">@color/gray_font</item>
+        <item name="android:textSize">@dimen/px38</item>
+    </style>
+
+    <!-- =========================== 个人中心 START =========================== -->
+
+    <!--子条目-外层布局-样式表-->
+    <style name="Mine_RelativeLayout_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px94</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!--子条目-图标—样式表-->
+    <style name="Mine_Icon_ImageView_Style">
+        <item name="android:layout_width">@dimen/px94</item>
+        <item name="android:layout_height">@dimen/px94</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--子条目－文字－样式表-->
+    <style name="Mine_TextView_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginEnd">@dimen/px37</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+    <!--子条目－更多按钮－样式表-->
+    <style name="Mine_More_Button_Style">
+        <item name="android:layout_width">@dimen/px13</item>
+        <item name="android:layout_height">@dimen/px26</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">@dimen/px37</item>
+        <item name="android:src">@mipmap/btn_more</item>
+    </style>
+
+    <!-- =========================== 个人中心 END =========================== -->
+
+
+    <!-- =========================== 停车场详情 START =========================== -->
+
+    <!--停车场详情-地址电话-样式表-->
+    <style name="ParkInfo_Address_Phone_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/px56</item>
+        <item name="android:drawablePadding">@dimen/px20</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/gray_font</item>
+    </style>
+
+    <!--停车场详情-色块分割-样式表-->
+    <style name="View_Division_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px22</item>
+        <item name="android:background">@color/gray_bg</item>
+    </style>
+
+
+    <!--停车场详情-黑体字（车场编号／类型／营业时间）-样式表-->
+    <style name="ParkInfo_TextView_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px28</item>
+        <item name="android:textColor">@color/black_font</item>
+        <item name="android:layout_marginTop">@dimen/px32</item>
+        <item name="android:layout_marginStart">@dimen/px52</item>
+    </style>
+
+    <!--停车场详情-收费规则（白天／夜间）-样式表-->
+    <style name="ParkInfo_Rule_Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/px64</item>
+        <item name="android:layout_marginTop">@dimen/px42</item>
+        <item name="android:layout_marginBottom">@dimen/px24</item>
+        <item name="android:drawablePadding">@dimen/px20</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/app_text</item>
+        <item name="android:textSize">@dimen/px30</item>
+        <item name="android:textColor">@color/black_font</item>
+    </style>
+
+
+    <!-- =========================== 停车场详情 END =========================== -->
+
+
+    <!--停车场详情-收费规则-上边框线-->
+    <style name="View_Line_ParkInfo_Style">
+        <item name="android:layout_width">@dimen/px600</item>
+        <item name="android:layout_height">@dimen/px2</item>
+        <item name="android:background">@color/line_gray</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+    <!--有上边距的分割线-->
+    <style name="View_Line_Top_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px1</item>
+        <item name="android:background">@color/line_gray</item>
+        <item name="android:layout_marginTop">@dimen/px42</item>
+    </style>
+
+    <!--普通分割线-->
+    <style name="View_Line_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px1</item>
+        <item name="android:background">@color/line_gray</item>
+    </style>
+
+    <!--标题栏下方的分割线-->
+    <style name="View_Title_Line_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px1</item>
+        <item name="android:background">@color/gray_line_title</item>
+    </style>
+
+    <!--【布局】全屏垂直灰色 -->
+    <style name="Layout_Match_Vertical_Style">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--【布局】包裹垂直灰色 -->
+    <style name="Layout_Wrap_Vertical_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/gray_bg</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--【布局】包裹垂直（白色）-->
+    <style name="Layout_Wrap_Vertical_White_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!-- =======================Base application theme.======================= -->
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+    <!-- =======================Base application theme.< END >======================= -->
+
+
+    <!-- 横向Dialog样式的Activity样式-->
+    <style name="LandSpaceActivityDialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--Dialog全屏-->
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+</resources>

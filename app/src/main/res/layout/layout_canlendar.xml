@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px60"
+        android:background="@color/white">
+
+        <!--日期-->
+
+        <TextView
+            android:id="@id/tv_date"
+            style="@style/Calendar_Font_Style"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/px28"
+            android:text="@string/app_text"
+            android:textColor="@color/red_font" />
+
+        <!--收入-->
+
+        <TextView
+            android:id="@id/tv_price"
+            style="@style/Calendar_Font_Style"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/px24"
+            android:layout_toEndOf="@id/tv_date"
+            android:background="@mipmap/bg_calendar_money"
+            android:paddingEnd="@dimen/px10"
+            android:paddingStart="@dimen/px10"
+            android:text="@string/price_"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@id/tv_more"
+            android:layout_height="match_parent"
+            style="@style/Calendar_Font_Style"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/px30"
+            android:drawableEnd="@mipmap/icon_calendar_more"
+            android:drawablePadding="@dimen/px10"
+            android:text="@string/view_report" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+
+    <com.zuoyu.manager.widget.MyGridView
+        android:id="@id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:listSelector="@null"
+        android:numColumns="7"
+        android:focusable="true"
+        android:paddingBottom="@dimen/px20" />
+
+</LinearLayout>

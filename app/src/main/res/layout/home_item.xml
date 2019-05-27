@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style"
+    android:gravity="center">
+
+    <!--首页功能区子条目-->
+
+    <!--图标-->
+
+    <ImageView
+        android:id="@id/iv_icon"
+        android:layout_width="@dimen/px70"
+        android:layout_height="@dimen/px120"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/ic_launcher" />
+
+    <!--文字描述-->
+
+    <TextView
+        android:id="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px40"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font" />
+
+
+</LinearLayout>

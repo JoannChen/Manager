@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!--在场车辆详情／订单详情（3）-->
+
+    <!--子订单明细子条目-->
+
+    <!--支付时间-->
+
+    <TextView
+        android:id="@+id/payTime"
+        style="@style/Details_Font_Style"
+        android:layout_marginStart="@dimen/px128"
+
+        android:text="@string/pay_time_colon" />
+
+    <TextView
+        android:id="@+id/tv_payTime"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum" />
+
+    <!--订单编号（子订单号）—-->
+
+    <TextView
+        android:id="@+id/orderNum"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/payTime"
+        android:layout_below="@id/payTime"
+        android:text="@string/transaction_number_colon" />
+
+    <TextView
+        android:id="@id/tv_orderNum"
+        style="@style/Details_Font_Style"
+        android:layout_below="@id/payTime"
+        android:layout_marginStart="@dimen/px72"
+        android:layout_toEndOf="@id/orderNum" />
+
+
+    <!--订单金额-->
+
+    <TextView
+        android:id="@+id/orderMoney"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/orderNum"
+        android:text="@string/order_money_colon" />
+
+    <TextView
+        android:id="@+id/tv_orderMoney"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/orderNum" />
+
+    <!--优惠金额-->
+
+    <TextView
+        android:id="@+id/discountMoney"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/orderMoney"
+        android:text="@string/discount_money_colon" />
+
+    <TextView
+        android:id="@+id/tv_discountMoney"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/orderMoney" />
+
+
+    <!--实际支付-->
+
+    <TextView
+        android:id="@+id/actualPay"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/discountMoney"
+        android:text="@string/actual_money_colon" />
+
+    <TextView
+        android:id="@+id/tv_actualPay"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/discountMoney" />
+
+
+    <!--支付渠道-->
+
+    <TextView
+        android:id="@+id/platform"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/actualPay"
+        android:text="@string/pay_platform_colon" />
+
+    <TextView
+        android:id="@+id/tv_platform"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/actualPay" />
+
+
+    <!--支付方式-->
+
+    <TextView
+        android:id="@+id/payType"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/orderNum"
+        android:layout_below="@id/platform"
+        android:text="@string/pay_type_colon" />
+
+    <TextView
+        android:id="@+id/tv_payType"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_orderNum"
+        android:layout_below="@id/platform" />
+
+
+    <!--分割色块-->
+    <View
+        style="@style/View_Division_Style"
+        android:layout_below="@id/payType"
+        android:layout_marginTop="@dimen/px30" />
+
+
+</RelativeLayout>

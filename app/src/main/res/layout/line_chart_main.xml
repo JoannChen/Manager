@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <TextView
+        android:id="@id/tv_desc"
+        style="@style/Chart_Production_Font_Big_Style"
+        android:text="@string/chart_prompt_income_7" />
+
+    <ImageView
+        android:id="@id/iv_back"
+        style="@style/Chart_Close_Btn_Style"
+        android:contentDescription="@string/app_icon" />
+
+    <TextView
+        android:id="@id/tv_day_rate"
+        style="@style/Chart_Production_Font_Right_Big_Style"
+        android:layout_alignBaseline="@id/tv_desc"
+        android:layout_toStartOf="@id/iv_back"
+        android:text="@string/day_income_colon" />
+
+    <!--仅出入场车辆统计时显示-->
+
+    <LinearLayout
+        android:id="@+id/ll_inOutCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_desc"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/px100"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/text_4"
+            style="@style/Chart_Production_Font_Right_Big_Style"
+            android:drawablePadding="@dimen/px5"
+            android:drawableStart="@mipmap/icon_car_in"
+            android:text="@string/out_car" />
+
+        <TextView
+            android:id="@id/text_5"
+            style="@style/Chart_Production_Font_Right_Big_Style"
+            android:drawablePadding="@dimen/px5"
+            android:drawableStart="@mipmap/icon_car_out"
+            android:text="@string/in_car" />
+    </LinearLayout>
+
+
+    <com.zuoyu.manager.widget.hellochart.chart.LineChartView
+        android:id="@id/lineChartView"
+        style="@style/Chart_Style"
+        android:layout_below="@id/tv_desc" />
+
+</RelativeLayout>

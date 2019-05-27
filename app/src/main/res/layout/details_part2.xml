@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Wrap_Vertical_White_Style">
+
+    <!--在场车辆详情／订单详情（2）-->
+
+
+    <!--车辆类型-->
+
+    <TextView
+        android:id="@+id/carType"
+        style="@style/Details_Font_Style"
+        android:layout_marginStart="@dimen/px128"
+        android:text="@string/car_type_colon" />
+
+    <TextView
+        android:id="@+id/tv_carType"
+        style="@style/Details_Font_Style"
+        android:layout_marginStart="@dimen/px72"
+        android:layout_toEndOf="@id/carType" />
+
+    <!--入场时间-->
+
+    <TextView
+        android:id="@+id/inTime"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/carType"
+        android:layout_below="@id/carType"
+        android:text="@string/in_time_colon" />
+
+    <TextView
+        android:id="@id/tv_inTime"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_carType"
+        android:layout_below="@id/carType" />
+
+    <!--支付状态（订单详情里为"出场时间"）-->
+
+    <TextView
+        android:id="@+id/payStatus"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/carType"
+        android:layout_below="@id/inTime"
+        android:text="@string/pay_status_colon" />
+
+    <TextView
+        android:id="@+id/tv_payStatus"
+        style="@style/Details_Font_Style"
+        android:layout_alignStart="@id/tv_carType"
+        android:layout_below="@id/inTime"
+        android:layout_marginBottom="@dimen/px30"
+        android:textColor="@color/red_font" />
+
+    <!--查看图片 -->
+
+    <TextView
+        android:id="@id/tv_image"
+        style="@style/ImageView_See_Image_Style"
+        android:layout_below="@id/payStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px20" />
+
+    <!--分割色块-->
+    <View
+        style="@style/View_Division_Style"
+        android:layout_below="@id/tv_image" />
+
+
+</RelativeLayout>

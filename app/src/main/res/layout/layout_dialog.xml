@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dialog"
+    android:layout_width="@dimen/px540"
+    android:layout_height="wrap_content"
+    android:background="@drawable/draw_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/px60">
+
+    <!-- 共用对话框 -->
+
+    <!-- ======================== 第一行 提示标题 ========================== -->
+
+
+    <!-- 提示标题（图标） -->
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="@dimen/px80"
+        android:layout_height="@dimen/px80"
+        android:contentDescription="@string/app_icon"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone" />
+
+    <!-- 提示标题（文字） -->
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_text"
+        android:textColor="@color/black_font"
+        android:textSize="@dimen/px40"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <!-- =================== 第二行 主体展示的文字内容 ======================= -->
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/px40"
+        android:gravity="center"
+        android:text="@string/app_text"
+        android:textColor="@color/gray_font"
+        android:textSize="@dimen/px36" />
+
+
+    <!-- ====================== 第三行 选择按钮 ============================= -->
+
+    <!--横线-->
+
+    <View
+        android:id="@+id/h_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/line_gray" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96">
+
+        <!-- 取消按钮 -->
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/app_text"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px36"
+            android:visibility="gone" />
+
+
+        <!--竖线-->
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="@dimen/px1"
+            android:layout_height="wrap_content"
+            android:background="@color/line_gray" />
+
+        <!-- 确定按钮 -->
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/app_text"
+            android:textColor="@color/red_font"
+            android:textSize="@dimen/px36" />
+    </LinearLayout>
+
+
+</LinearLayout>

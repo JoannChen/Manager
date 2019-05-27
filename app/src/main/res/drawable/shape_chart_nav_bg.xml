@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" />
+
+    <!--图表区选项卡背景-->
+    <corners android:radius="@dimen/px200" />
+
+    <stroke
+        android:width="2px"
+        android:color="#eda79a" />
+
+</shape>

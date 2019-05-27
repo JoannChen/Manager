@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--日历-每天-样式-->
+
+    <item android:drawable="@mipmap/bg_calendar_today" android:state_pressed="true" />
+
+</selector>

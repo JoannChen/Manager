@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zuoyu.manager.widget.pullable.PullToRefreshLayout
+        android:id="@id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_pull_header_down_refresh" />
+
+        <com.zuoyu.manager.widget.pullable.PullListView
+            android:id="@id/pullListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray_bg"
+            android:dividerHeight="0dp"
+            android:listSelector="#00000000" />
+
+
+        <include layout="@layout/layout_pull_footer_up_loading" />
+
+    </com.zuoyu.manager.widget.pullable.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:id="@id/emptyRLayout"
+        style="@style/Layout_Match_Vertical_Style"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@id/emptyIcon"
+            android:layout_width="@dimen/px146"
+            android:layout_height="@dimen/px170"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px400"
+            android:contentDescription="@string/app_icon"
+            android:src="@mipmap/icon_data_null" />
+
+        <TextView
+            android:id="@id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emptyIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px30"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/px28" />
+    </RelativeLayout>
+
+</FrameLayout>

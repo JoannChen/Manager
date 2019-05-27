@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Layout_Match_Vertical_Style"
+    android:background="@color/white">
+
+    <!--出入场车辆／车位利用率（共用部分：24小时／7日／30日切换选项卡）-->
+
+    <!--图表容器 存放Fragment-->
+
+    <LinearLayout
+        android:id="@id/ll_chart"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px400"
+        android:orientation="vertical" />
+
+    <!--分割色块-->
+
+    <View style="@style/View_Division_Style" />
+
+    <!--图表区三个个标题切换-->
+
+    <!--<com.zuoyu.manager.widget.NavAnimation-->
+    <!--android:id="@+id/navAnimation"-->
+    <!--style="@style/Chart_RadioGroup_Nav_Style" />-->
+
+    <RadioGroup
+        android:id="@id/radioGroup"
+        style="@style/Chart_RadioGroup_Nav_Style"
+        android:layout_marginBottom="@dimen/px36">
+
+        <RadioButton
+            android:id="@id/tv_hour24"
+            style="@style/Chart_RadioButton_Nav_Style"
+            android:text="@string/hour24" />
+
+        <RadioButton
+            android:id="@id/tv_day7"
+            style="@style/Chart_RadioButton_Nav_Style"
+            android:text="@string/day7" />
+
+        <RadioButton
+            android:id="@id/tv_day30"
+            style="@style/Chart_RadioButton_Nav_Style"
+            android:text="@string/day30" />
+
+    </RadioGroup>
+
+    <!--车位利用率界面隐藏，出入场车辆／临停收入界面显示-->
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px60"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/px46"
+            android:gravity="center_vertical"
+            android:text="@string/time"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px26" />
+
+
+        <TextView
+            android:id="@id/text_6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/out_car"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/px46"
+            android:layout_toEndOf="@id/text_6"
+            android:gravity="center_vertical|end"
+            android:text="@string/in_car"
+            android:textColor="@color/black_font"
+            android:textSize="@dimen/px26" />
+
+    </RelativeLayout>
+
+    <!--车位利用率隐藏-->
+
+    <View
+        android:id="@id/line_1"
+        style="@style/View_Line_Style"
+        android:visibility="gone" />
+
+    <!--容器-->
+
+    <LinearLayout
+        android:id="@id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

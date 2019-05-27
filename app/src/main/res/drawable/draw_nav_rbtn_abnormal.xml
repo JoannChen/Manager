@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--带选项卡的标题栏-文字背景-样式-->
+
+    <item android:drawable="@mipmap/bg_rbtn_abnormal" android:state_checked="true" />
+    <item android:drawable="@mipmap/bg_transparent" android:state_checked="false" />
+
+</selector>
